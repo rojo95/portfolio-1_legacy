@@ -14,5 +14,8 @@ export default defineConfig({
   base: '/',
   build: { // configuracion para ejecutar en git pages
     outDir: 'docs'
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/portfolio/'
+    : '/'
 })
