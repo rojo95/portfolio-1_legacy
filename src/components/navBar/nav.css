@@ -1,0 +1,9 @@
+.bg {
+    background-color: var(--color-custom-dark) !important;
+  }
+
+.router-link-active {
+    font-weight: bold;
+    text-shadow: 0 0 15px var(--color-custom-purple);
+}
+
