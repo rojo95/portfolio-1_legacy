@@ -88,7 +88,7 @@
                             </div>
                             <div v-for="(item, index) in langs" :key="index" class="carousel-item  white-text" href="#one!">
                                 <h4>{{item.name}}</h4>
-                                <img :src="'/assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
+                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
                                 <p class="white-text">{{item.desc}}</p>
                                 <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
                             </div>
@@ -105,7 +105,7 @@
                             </div>
                             <div v-for="(item, index) in langWebD" :key="index" class="carousel-item  white-text" href="#one!">
                                 <h4>{{item.name}}</h4>
-                                <img :src="'/assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="height:150px; width: 130px;">
+                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="height:150px; width: 130px;">
                                 <p class="white-text">{{item.desc}}</p>
                                 <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
                             </div>
@@ -122,7 +122,7 @@
                             </div>
                             <div v-for="(item, index) in frameworks" :key="index" class="carousel-item white-text">
                                 <h4>{{item.name}}</h4>
-                                <img :src="'/assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
+                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
                                 <p class="white-text">{{item.desc}}</p>
                                 <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
                             </div>
@@ -139,7 +139,7 @@
                             </div>
                             <div v-for="(item, index) in entornoEjecucion" :key="index" class="carousel-item  white-text" href="#one!">
                                 <h4>{{item.name}}</h4>
-                                <img :src="'/assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
+                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
                                 <p class="white-text">{{item.desc}}</p>
                                 <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
                             </div>
@@ -156,7 +156,7 @@
                             </div>
                             <div v-for="(item, index) in sO" :key="index" class="carousel-item  white-text" href="#one!">
                                 <h4>{{item.name}}</h4>
-                                <img :src="'/assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
+                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
                                 <p class="white-text">{{item.desc}}</p>
                                 <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
                             </div>
@@ -173,7 +173,7 @@
                             </div>
                             <div v-for="(item, index) in servidores" :key="index" class="carousel-item  white-text" href="#one!">
                                 <h4>{{item.name}}</h4>
-                                <img :src="'/assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
+                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
                                 <p class="white-text">{{item.desc}}</p>
                                 <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
                             </div>
@@ -190,7 +190,7 @@
                             </div>
                             <div v-for="(item, index) in servidores" :key="index" class="carousel-item  white-text" href="#one!">
                                 <h4>{{item.name}}</h4>
-                                <img :src="'/assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
+                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
                                 <p class="white-text">{{item.desc}}</p>
                                 <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
                             </div>
@@ -213,7 +213,7 @@
                             <div class="valign-wrapper">
                                 <div v-for="(item, index) in langWebD" :key="index" class="padding-image center">
                                     <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'/assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100' height="150">
+                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100' height="150">
                                         <p>{{item.name}}</p>
                                     </a>
                                 </div>
@@ -232,14 +232,14 @@
                             <div>
                                 <div class="carousel ">
                                     <a v-for="(item, index) in frameworks" :key="index" class="carousel-item" v-bind:href="item.link ? item.link : '#'" target="_blank">
-                                        <img v-bind:src="'/assets/img/knowledge/' + item.img + '.png'" v-bind:class="item.img == 'react' ? 'rotate' : ''" v-bind:alt="item.name" v-bind:title="item.name" width="100">
+                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:class="item.img == 'react' ? 'rotate' : ''" v-bind:alt="item.name" v-bind:title="item.name" width="100">
                                     </a>
                                 </div>
                             </div>
                              <div class="valign-wrapper">
                                 <div v-for="(item, index) in frameworks" :key="index" class="padding-image center" >
                                     <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'/assets/img/knowledge/' + item.img + '.png'" v-bind:class="item.img == 'react' ? 'rotate' : ''" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
+                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:class="item.img == 'react' ? 'rotate' : ''" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
                                         <p>{{item.name}}</p>
                                     </a>
                                 </div>
@@ -260,7 +260,7 @@
                             <div class="valign-wrapper">
                                 <div v-for="(item, key) in entornoEjecucion" :key="key" class="padding-image center">
                                     <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'/assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
+                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
                                         <p>{{item.name}}</p>
                                     </a>
                                 </div>
@@ -277,7 +277,7 @@
                             <div class="valign-wrapper">
                                 <div v-for="(item, key) in sO" :key="key" class="padding-image center">
                                     <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'/assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
+                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
                                         <p>{{item.name}}</p>
                                     </a>
                                 </div>
@@ -294,7 +294,7 @@
                             <div class="valign-wrapper">
                                 <div v-for="(item, key) in servidores" :key="key" class="padding-image center">
                                     <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'/assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
+                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
                                         <p>{{item.name}}</p>
                                     </a>
                                 </div>
