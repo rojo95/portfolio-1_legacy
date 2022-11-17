@@ -11,11 +11,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/',
+  base: '/portfolio/',
   build: { // configuracion para ejecutar en git pages
     outDir: 'docs'
   },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/portfolio/'
-    : '/'
 })
