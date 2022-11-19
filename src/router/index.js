@@ -21,7 +21,9 @@ const router = createRouter({
       path: '/work-experience',
       name: 'experience',
       component: Experience
-    }
+    },
+    { path: '/:catchAll(.*)',
+     component: () => import ('../views/AboutMe/index.vue'), },
   ]
 })
 

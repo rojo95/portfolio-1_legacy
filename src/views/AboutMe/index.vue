@@ -75,237 +75,47 @@
                         </div>
                         
                     </div>
-
-                    <!-- <Conocimientos title="Frameworks" :data="langs" v-model="langs"/> -->
-    
-                    <div>
-                        <div class="carousel center">
-                            <div class="carousel-fixed-item center">
-                                <h3 >
-                                    Lenguajes de Programación
-                                </h3 >
-                                <!-- <p>Subtitle</p> -->
-                            </div>
-                            <div v-for="(item, index) in langs" :key="index" class="carousel-item  white-text" href="#one!">
-                                <h4>{{item.name}}</h4>
-                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
-                                <p class="white-text">{{item.desc}}</p>
-                                <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="carousel center">
-                            <div class="carousel-fixed-item center">
-                                <h3 >
-                                    Herramientas de Diseño Web
-                                </h3 >
-                                <!-- <p>Subtitle</p> -->
-                            </div>
-                            <div v-for="(item, index) in langWebD" :key="index" class="carousel-item  white-text" href="#one!">
-                                <h4>{{item.name}}</h4>
-                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="height:150px; width: 130px;">
-                                <p class="white-text">{{item.desc}}</p>
-                                <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="carousel center">
-                            <div class="carousel-fixed-item center">
-                                <h3 >
-                                    Frameworks
-                                </h3 >
-                                <!-- <p>Subtitle</p> -->
-                            </div>
-                            <div v-for="(item, index) in frameworks" :key="index" class="carousel-item white-text">
-                                <h4>{{item.name}}</h4>
-                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
-                                <p class="white-text">{{item.desc}}</p>
-                                <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="carousel center">
-                            <div class="carousel-fixed-item center">
-                                <h3 >
-                                    Entornos de Ejecucion
-                                </h3 >
-                                <!-- <p>Subtitle</p> -->
-                            </div>
-                            <div v-for="(item, index) in entornoEjecucion" :key="index" class="carousel-item  white-text" href="#one!">
-                                <h4>{{item.name}}</h4>
-                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
-                                <p class="white-text">{{item.desc}}</p>
-                                <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="carousel center">
-                            <div class="carousel-fixed-item center">
-                                <h3 >
-                                    Sistemas Operativos
-                                </h3 >
-                                <!-- <p>Subtitle</p> -->
-                            </div>
-                            <div v-for="(item, index) in sO" :key="index" class="carousel-item  white-text" href="#one!">
-                                <h4>{{item.name}}</h4>
-                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
-                                <p class="white-text">{{item.desc}}</p>
-                                <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="carousel center">
-                            <div class="carousel-fixed-item center">
-                                <h3 >
-                                    Servidores
-                                </h3 >
-                                <!-- <p>Subtitle</p> -->
-                            </div>
-                            <div v-for="(item, index) in servidores" :key="index" class="carousel-item  white-text" href="#one!">
-                                <h4>{{item.name}}</h4>
-                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
-                                <p class="white-text">{{item.desc}}</p>
-                                <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="carousel center">
-                            <div class="carousel-fixed-item center">
-                                <h3 >
-                                    Librerías
-                                </h3 >
-                                <p>Geolocalización</p>
-                            </div>
-                            <div v-for="(item, index) in servidores" :key="index" class="carousel-item  white-text" href="#one!">
-                                <h4>{{item.name}}</h4>
-                                <img :src="'./assets/img/knowledge/' + item.img + '.png'" :class="item.img == 'react' ? 'rotate' : ''" alt="" style="width:150px;">
-                                <p class="white-text">{{item.desc}}</p>
-                                <a class="btn waves-effect purple white-text darken-text-2"> Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
-    
+                    
                 </div>
-    
-                <!--
-                    <div class="row">
-                    <div class="col">
+                
+                <div class="row">
+                    <div class="col m6 s12">
+                        <Conocimientos title="Lenguajes de Programación" :data="langs"/>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <h5>
-                                <b>
-                                    Lenguajes de Diseño Web
-                                </b>
-                            </h5>
-                            <div class="valign-wrapper">
-                                <div v-for="(item, index) in langWebD" :key="index" class="padding-image center">
-                                    <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100' height="150">
-                                        <p>{{item.name}}</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col m6 s12">
+                        <Conocimientos title="Herramientas de Diseño Web" :data="langWebD" width='120px'/>
                     </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <div>
-                                <h5>
-                                    <b>
-                                        Frameworks
-                                    </b>
-                                </h5>
-                            </div>
-                            <div>
-                                <div class="carousel ">
-                                    <a v-for="(item, index) in frameworks" :key="index" class="carousel-item" v-bind:href="item.link ? item.link : '#'" target="_blank">
-                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:class="item.img == 'react' ? 'rotate' : ''" v-bind:alt="item.name" v-bind:title="item.name" width="100">
-                                    </a>
-                                </div>
-                            </div>
-                             <div class="valign-wrapper">
-                                <div v-for="(item, index) in frameworks" :key="index" class="padding-image center" >
-                                    <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:class="item.img == 'react' ? 'rotate' : ''" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
-                                        <p>{{item.name}}</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="col m6 s12">
+                        <Conocimientos title="Frameworks" :data="frameworks"/>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                        </div>
+                    <div class="col m6 s12">
+                        <Conocimientos title="Entornos de Ejecucion" :data="entornoEjecucion"/>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <h5>
-                                <b>
-                                    Entornos de Ejecución
-                                </b>
-                            </h5>
-                            <div class="valign-wrapper">
-                                <div v-for="(item, key) in entornoEjecucion" :key="key" class="padding-image center">
-                                    <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
-                                        <p>{{item.name}}</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="col m6 s12">
+                        <Conocimientos title="Sistemas Operativos" :data="sO"/>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <h5>
-                                <b>
-                                    Sistemas Operativos
-                                </b>
-                            </h5>
-                            <div class="valign-wrapper">
-                                <div v-for="(item, key) in sO" :key="key" class="padding-image center">
-                                    <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
-                                        <p>{{item.name}}</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col m6 s12">
+                        <Conocimientos title="Servidores" :data="servidores"/>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <h5>
-                                <b>
-                                    Servidores
-                                </b>
-                            </h5>
-                            <div class="valign-wrapper">
-                                <div v-for="(item, key) in servidores" :key="key" class="padding-image center">
-                                    <a v-bind:href="item.link ? item.link : '#'" target="_blank" rel="noopener noreferrer" class="center white-text">
-                                        <img v-bind:src="'./assets/img/knowledge/' + item.img + '.png'" v-bind:alt="item.name" v-bind:title="item.name" width='100'>
-                                        <p>{{item.name}}</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="col m6 s12">
+                        <Conocimientos title="Librerías" subtitle="Geolocalización" :data="libGeo"/>
                     </div>
-                </div> -->
+                    <div class="col m6 s12">
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        
     </div>
 </template>
 
@@ -319,104 +129,104 @@ export default {
             show: false,
             langs: [
                 {
-                    img: "php",
+                    img: new URL(`../../assets/img/knowledge/php.png`, import.meta.url).href,
                     name: 'PHP',
                     link: "https://www.php.net/manual/es/intro-whatis.php"
                 },
                 {
-                    img: "javascript",
+                    img: new URL(`../../assets/img/knowledge/javascript.png`, import.meta.url).href,
                     name: 'JavaScript',
                     link: "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
                 },
                 {
-                    img: "typescript",
+                    img: new URL(`../../assets/img/knowledge/typescript.png`, import.meta.url).href,
                     name: 'TypeScript',
                     link: "https://es.wikipedia.org/wiki/TypeScript"
                 }
             ],
             langWebD: [
                 {
-                    img: 'css3',
+                    img: new URL(`../../assets/img/knowledge/css3.png`, import.meta.url).href,
                     name: 'CSS 3',
                     link: 'https://es.wikipedia.org/wiki/CSS'
                 },
                 {
-                    img: 'html5',
+                    img: new URL(`../../assets/img/knowledge/html5.png`, import.meta.url).href,
                     name: 'HTML 5',
                     link: 'https://es.wikipedia.org/wiki/HTML'
                 },
             ],
             frameworks: [
                 {
-                    img: 'laravel',
+                    img: new URL(`../../assets/img/knowledge/laravel.png`, import.meta.url).href,
                     name: 'Laravel',
                     link: '',
                 },
                 {
-                    img: 'angular',
+                    img: new URL(`../../assets/img/knowledge/angular.png`, import.meta.url).href,
                     name: 'Angular',
                     link: '',
                 },
                 {
-                    img: 'vue',
+                    img: new URL(`../../assets/img/knowledge/vue.png`, import.meta.url).href,
                     name: 'Vue JS',
                     link: '',
                 },
                 {
-                    img: 'react',
+                    img: new URL(`../../assets/img/knowledge/react.png`, import.meta.url).href,
                     name: 'React JS / React Native',
                     link: '',
                 },
                 {
-                    img: 'ionic',
+                    img: new URL(`../../assets/img/knowledge/ionic.png`, import.meta.url).href,
                     name: 'Ionic',
                     link: '',
                 },
                 {
-                    img: 'expressjs',
+                    img: new URL(`../../assets/img/knowledge/expressjs.png`, import.meta.url).href,
                     name: 'Express.JS',
                     link: '',
                 },
                 {
-                    img: 'bootstrap',
+                    img: new URL(`../../assets/img/knowledge/bootstrap.png`, import.meta.url).href,
                     name: 'Bootstrap',
                     link: '',
                 },
             ],
             entornoEjecucion: [
                 {
-                    img: 'node',
+                    img: new URL(`../../assets/img/knowledge/node.png`, import.meta.url).href,
                     name: 'Node JS',
                     link: ''
                 }
             ],
             sO: [
                 {
-                    img: 'windows',
+                    img: new URL(`../../assets/img/knowledge/windows.png`, import.meta.url).href,
                     name: 'Windows',
                     link: ''
                 },
                 {
-                    img: 'ubuntu',
+                    img: new URL(`../../assets/img/knowledge/ubuntu.png`, import.meta.url).href,
                     name: 'Ubuntu',
                     link: ''
                 },
                 {
-                    img: 'linux_mint',
+                    img: new URL(`../../assets/img/knowledge/linux_mint.png`, import.meta.url).href,
                     name: 'Linux Mint',
                     link: ''
                 },
             ],
             servidores: [
                 {
-                    img: 'apache',
+                    img: new URL(`../../assets/img/knowledge/apache.png`, import.meta.url).href,
                     name: 'Apache HTTP Server',
                     link: ''
                 }
             ],
             libGeo: [
                 {
-                    img: 'leaflet',
+                    img: new URL(`../../assets/img/knowledge/leaflet.png`, import.meta.url).href,
                     name: 'Leaflet',
                     lang: 'JavaScript',
                     link: 'https://leafletjs.com',
@@ -427,6 +237,7 @@ export default {
     },
     mounted() {
         M.AutoInit(); 
+        console.log(this.images)
     },
     methods: {
         loading(){

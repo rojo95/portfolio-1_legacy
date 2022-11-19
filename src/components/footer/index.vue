@@ -18,7 +18,7 @@
                     <h5 class="white-text">Menú</h5>
                     <ul>
                         <li><RouterLink class="grey-text text-lighten-3 waves-effect waves-light" to="/">Sobre mí</RouterLink></li>
-                        <li><RouterLink class="grey-text text-lighten-3 waves-effect waves-light" to="/portfolio">Portafolio</RouterLink></li>
+                        <!-- <li><RouterLink class="grey-text text-lighten-3 waves-effect waves-light" to="/portfolio">Portafolio</RouterLink></li> -->
                         <li><RouterLink class="grey-text text-lighten-3 waves-effect waves-light" to="/work-experience">Experiencia Laboral</RouterLink></li>
                     </ul>
                 </div>
