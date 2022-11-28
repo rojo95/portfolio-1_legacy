@@ -125,7 +125,7 @@ export default {
     },
     methods: {
         loading(){
-            this.show = !this.show
+            this.show = true
         }
     }
   }
@@ -162,7 +162,9 @@ export default {
                                 </div>
                             </div>
                         </div>
-                        <img :src="item.thumb" class="materialboxed" data-caption="{{item.info}}" v-show="show" @load="loading()">
+                        <div v-show="show">
+                            <img :src="item.thumb" class="materialboxed" data-caption="{{item.info}}" @load="loading()">
+                        </div>
                         <span class="card-title" :class="item.color_title ? item.color_title : 'white black-text'">{{item.title}}</span>
                         <a class="btn-floating halfway-fab waves-effect waves-light purple btn-large" :href="item.demo" target="_blakn">
                             <!-- <RouterLink class="grey-text text-lighten-3 waves-effect waves-light" to="/project-details"> -->
@@ -188,7 +190,6 @@ span.card-title {
 }
 
 .loader {
-    min-height: 300px; 
-    top: 100px;
+    min-height: 300px; top: 100px;
 }
 </style>
