@@ -10,7 +10,7 @@ export default {
     },
     methods: {
         loaded() {
-            this.show = !this.show;
+            this.show = true;
         }
     }
 }
