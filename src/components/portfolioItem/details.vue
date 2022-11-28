@@ -36,7 +36,7 @@ export default {
                 </div>
                 
                 <img :src="data.thumb" class="materialboxed" :data-caption="data.info" @load="loaded()" v-show="show">
-                <span class="card-title" :class="data.color_title ? data.color_title : 'white black-text'">{{data.title}}</span>
+                <span class="card-title" :class="!show ? 'black' : data.color_title ? data.color_title : 'white black-text'">{{data.title}}</span>
                 <a class="btn-floating halfway-fab waves-effect waves-light purple btn-large" :href="data.demo" target="_blakn">
                     <!-- <RouterLink class="grey-text text-lighten-3 waves-effect waves-light" to="/project-details"> -->
                         <i class="material-icons">add</i>
