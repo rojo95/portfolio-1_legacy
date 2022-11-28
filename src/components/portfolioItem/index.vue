@@ -147,7 +147,7 @@ export default {
             <div class="col s12 m4" v-for="(item, i) in pages" :key="i">
                 <div class="card">
                     <div class="card-image center-align s12">
-                        <div class="loader" v-show="show">
+                        <div class="loader" v-show="!show">
                             <div class="preloader-wrapper big active">
                                 <div class="spinner-layer spinner-blue-only">
                                     <div class="circle-clipper left">
@@ -162,7 +162,7 @@ export default {
                                 </div>
                             </div>
                         </div>
-                        <img :src="item.thumb" class="materialboxed" data-caption="{{item.info}}" v-show="!show" @load="loading()">
+                        <img :src="item.thumb" class="materialboxed" data-caption="{{item.info}}" v-show="show" @load="loading()">
                         <span class="card-title" :class="item.color_title ? item.color_title : 'white black-text'">{{item.title}}</span>
                         <a class="btn-floating halfway-fab waves-effect waves-light purple btn-large" :href="item.demo" target="_blakn">
                             <!-- <RouterLink class="grey-text text-lighten-3 waves-effect waves-light" to="/project-details"> -->
