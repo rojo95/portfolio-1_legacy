@@ -2,7 +2,6 @@
 export default {
     data() {
       return {
-        show: false,
         techs: [
             {
                 name:'One Page',
@@ -123,11 +122,6 @@ export default {
     mounted() {
       M.AutoInit(); 
     },
-    methods: {
-        loading(){
-            this.show = true
-        }
-    }
   }
 </script>
 
@@ -147,7 +141,7 @@ export default {
             <div class="col s12 m4" v-for="(item, i) in pages" :key="i">
                 <div class="card">
                     <div class="card-image center-align s12">
-                        <div class="loader" v-show="!show">
+                        <!-- <div class="loader">
                             <div class="preloader-wrapper big active">
                                 <div class="spinner-layer spinner-blue-only">
                                     <div class="circle-clipper left">
@@ -161,10 +155,9 @@ export default {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div v-show="show">
-                            <img :src="item.thumb" class="materialboxed" data-caption="{{item.info}}" @load="loading()">
-                        </div>
+                        </div> -->
+                        
+                        <img :src="item.thumb" class="materialboxed" :data-caption="item.info">
                         <span class="card-title" :class="item.color_title ? item.color_title : 'white black-text'">{{item.title}}</span>
                         <a class="btn-floating halfway-fab waves-effect waves-light purple btn-large" :href="item.demo" target="_blakn">
                             <!-- <RouterLink class="grey-text text-lighten-3 waves-effect waves-light" to="/project-details"> -->
