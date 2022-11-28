@@ -33,18 +33,6 @@ export default {
         </div>
       </li>
     </ul>
-    <!-- <div class="details">
-      <div class="card ">
-        <div class="card-content" @click="mostrar()">
-          <h3 class="card-title">
-            <slot name="heading"></slot>
-          </h3>
-          <div v-show="show">
-            <slot></slot>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -54,12 +42,7 @@ export default {
 }
 .item {
   margin-top: 2rem;
-  width: 900px !important;
-}
-
-.details {
-  /* flex: 1; */
-  /* margin-left: 1rem; */
+  width: 100% !important;
 }
 
 i {
@@ -82,6 +65,7 @@ h3 {
 @media (min-width: 1024px) {
   .item {
     margin-top: 0;
+    width: 900px !important;
     padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
   }
 

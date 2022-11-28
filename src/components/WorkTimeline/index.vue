@@ -1,14 +1,7 @@
-<style scoped>
-  li {
-    margin-left: 15px;
-  }
-</style>
 
 <script setup>
   import ItemTimeline from './ItemTimeline.vue';
 </script>
-
-<!-- <script src="./WorkTimeline.js"></script> -->
 
 <script>
   export default {
@@ -122,9 +115,14 @@
 
     <ItemTimeline v-for="item in works" v-bind:key="item">
       <template #icon>
-        <i class="material-icons">business</i>
+        <i class="material-icons icon">business</i>
       </template>
-      <template #heading>{{item.cargo}} - {{item.abrName}} <br> ({{item.inicio}} - {{item.fin}}) </template>
+      <template #heading>
+        <k>
+          {{item.cargo}}
+        </k>
+        &nbsp;- {{item.abrName}} <br> ({{item.inicio}} - {{item.fin}})
+      </template>
   
       <p>
         <b v-if="item.abrName!=item.name">{{item.name}}</b>
@@ -155,3 +153,16 @@
     </ItemTimeline>
   </div>
 </template>
+
+<style scoped>
+  li {
+    margin-left: 15px;
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    .icon {
+      color: #fff !important;
+    }
+  }
+</style>
