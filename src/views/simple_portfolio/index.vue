@@ -98,7 +98,6 @@ export default {
                 </div>
                 <div class="row">
                     <div class="col">
-                        <!-- <img class="materialboxed" width="650" src="../../assets/img/skybox_nx.jpg" data-caption="A picture of a way with a group of trees in a park">         -->
                         <PortfolioItems/>
                     </div>
                 </div>
