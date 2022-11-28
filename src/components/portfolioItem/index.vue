@@ -1,3 +1,6 @@
+<script setup>
+import Item from './details.vue';
+</script>
 <script>
 export default {
     data() {
@@ -124,7 +127,6 @@ export default {
     },
   }
 </script>
-
 <template>
     <div>
         <!-- <div class="row">
@@ -138,51 +140,12 @@ export default {
             </div>
         </div> -->
         <div class="row">
-            <div class="col s12 m4" v-for="(item, i) in pages" :key="i">
-                <div class="card">
-                    <div class="card-image center-align s12">
-                        <!-- <div class="loader">
-                            <div class="preloader-wrapper big active">
-                                <div class="spinner-layer spinner-blue-only">
-                                    <div class="circle-clipper left">
-                                        <div class="circle"></div>
-                                    </div>
-                                    <div class="gap-patch">
-                                        <div class="circle"></div>
-                                    </div>
-                                    <div class="circle-clipper right">
-                                        <div class="circle"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        
-                        <img :src="item.thumb" class="materialboxed" :data-caption="item.info">
-                        <span class="card-title" :class="item.color_title ? item.color_title : 'white black-text'">{{item.title}}</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light purple btn-large" :href="item.demo" target="_blakn">
-                            <!-- <RouterLink class="grey-text text-lighten-3 waves-effect waves-light" to="/project-details"> -->
-                                <i class="material-icons">add</i>
-                            <!-- </RouterLink> -->
-                        </a>
-                    </div>
-                    <div class="card-content black-text">
-                        <p>{{item.info}}</p>
-                    </div>
-                </div>
-            </div>
+            <Item v-for="(item, i) in pages" :key="i" :data="item" />
         </div>
     </div>
 </template>
-
 <style scoped>
-span.card-title {
-    border-top-right-radius: 10px;
-}
 .radius{
     border-radius: 5px;
-}
-
-.loader {
-    min-height: 300px; top: 100px;
 }
 </style>
