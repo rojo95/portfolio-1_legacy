@@ -1,6 +1,6 @@
 <script setup>
 import Layout from "../../layouts/index.vue";
-import axios from 'axios';
+import axios from 'redaxios';
 </script>
 <script>
 export default {
