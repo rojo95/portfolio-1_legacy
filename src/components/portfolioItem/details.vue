@@ -108,8 +108,6 @@ export default {
                 finalArr.push(element.pop());    
             }
 
-            console.log(finalArr);
-
             let finalString = finalArr.join('');
 
             return btoa(btoa(finalString));
@@ -138,7 +136,8 @@ export default {
                     </div>
                 </div>
                 
-                <img :src="'src/assets/img/projects/'+data.thumb" @load="loaded()" v-show="show">
+                <img :src="'./src/assets/img/projects/'+data.thumb" @load="loaded()" v-show="show">
+                <!-- <img :src="new URL('../..assets/img/projects/'+data.thumb,import.meta.url).href" @load="loaded()" v-show="show"> -->
                 <span class="card-title" :class="!show ? 'black' : data.color_title ? data.color_title : 'white black-text'">{{data.title}}</span>
                 <RouterLink class="btn-floating halfway-fab waves-effect waves-light purple btn-large" :to="'/project-details/'+encrypt(data.id)">
                     <i class="material-icons">add</i>

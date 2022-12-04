@@ -8,11 +8,13 @@ export default {
         return {
             id: this.$route.params.id,
             project: null,
-            showImg: true
+            showImg: true,
+            image: null
         }
     },
     mounted() {
         this.getProj(this.hardDecrypt(this.id));
+        this.image = new URL(`../../assets/img/knowledge/`+project.thumb, import.meta.url).href;
     },
     methods: {
         hardDecrypt(str) {
@@ -117,9 +119,10 @@ export default {
             return finalString;
         },
         async getProj(id) {
-            return await axios.get("/src/assets/information/projects.json")
+            return await axios.get(new URL("../../assets/information/projects.json", import.meta.url).href)
             .then((result) => {
                 this.project = result.data.data[id-1];
+                console.log(this.image);
             })
         }
     }
@@ -135,8 +138,7 @@ export default {
                     {{project.info}}
                 </div>
                 <div class="col m6 s12">
-                    <img :src="'../src/assets/img/projects/'+project.thumb" v-show="showImg" style="width:100%">
-                    <!-- <img :src="'../src/assets/img/projects/'+project.thumb" @load="loaded()" v-show="showImg" style="width:100%"> -->
+                    <img :src="image" v-show="showImg" style="width:100%">
                 </div>
                 <div class="col m6 s12 center">
                     <a :href="project.demo" target="_blank" class="btn btn-large purple">DEMO</a>

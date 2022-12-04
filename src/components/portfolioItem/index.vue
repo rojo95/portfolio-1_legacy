@@ -42,7 +42,6 @@ export default {
             },
         ],
         pages: null,
-        // url: new URL("/src/assets/information/projects.json", import.meta.url).href,
       }
     },
     mounted() {
