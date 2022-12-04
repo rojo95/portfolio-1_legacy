@@ -1,126 +1,6 @@
-<style src="./aboutMe.css"></style>
-<template>
-    <div class="section bg-dark white-text">
-
-        <div class="row">
-
-            <div class="col m10 s10 offset-s1 offset-m1">
-    
-                <div class="row">
-                    <div class="col">
-                        <h2>Acerca de Mí</h2>
-                    </div>
-                </div>
-    
-                <div class="row">
-                
-                    <div class="col m6 s12">
-                        <p class="flow-text text-justify">
-                            Ingeniero en Informática, con más de 5 años de experiencia en el área, especializado en el desarrollo de sistemas informáticos.
-                            <br>
-                            Soy una persona responsable, organizado, proactivo, comunicativo, creativo, investigativo, con disposición a aprender nuevos conocimientos, experiencia laboral y asumir retos de cualquier tipo.
-                            <br>&nbsp;
-                        </p>
-                    </div>
-                
-                    <div class="col m6 s12">
-                        <div class="center">
-                            <img class="profile responsive-img border-green" v-bind:class="{'rotation' : show , 'hidden': !show}" src="../../assets/img/foto.jpeg"  @load="loading()">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col s12">
-                        <p class="flow-text">
-                            <b>Educación:
-                                <br>
-                                Instituto Universitario de Tecnología del Oeste “Mariscal Sucre” (IUTOMS)
-                            </b> 
-                            <br>
-                            <b>
-                                Título Obtenido:&nbsp;
-                            </b>
-                                Ing. en Informática, 2018
-                            <br>
-                            Caracas, Distrito Capital, Venezuela.
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col m6 s12">
-                        <p class="flow-text">
-                            <b>Idiomas:</b>  
-                            <ul>
-                                <li>Español - Nativo</li>
-                                <li>
-                                    Ingles - A2
-                                </li>
-                                <li>
-                                    Portugués - A1
-                                </li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col">
-    
-                        <div class="row">
-                            <div class="col">
-                                <h4>Conocimientos</h4>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                
-                <div class="row">
-                    <div class="col m6 s12">
-                        <Conocimientos title="Lenguajes de Programación" :data="langs"/>
-                    </div>
-                    <div class="col m6 s12">
-                        <Conocimientos title="Herramientas de Diseño Web" :data="langWebD" width='120px'/>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col m6 s12">
-                        <Conocimientos title="Frameworks" :data="frameworks"/>
-                    </div>
-                    <div class="col m6 s12">
-                        <Conocimientos title="Entornos de Ejecucion" :data="entornoEjecucion"/>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col m6 s12">
-                        <Conocimientos title="Sistemas Operativos" :data="sO"/>
-                    </div>
-                    <div class="col m6 s12">
-                        <Conocimientos title="Servidores" :data="servidores"/>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col m6 s12">
-                        <Conocimientos title="Librerías" subtitle="Geolocalización" :data="libGeo"/>
-                    </div>
-                    <div class="col m6 s12">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</template>
-
 <script setup>
 import Conocimientos from "../../components/KnowledgeItems/index.vue";
+import Layout from "../../layouts/index.vue";
 </script>
 <script>
 export default {
@@ -241,8 +121,199 @@ export default {
     },
     methods: {
         loading(){
-            this.show = !this.show
+            this.show = true
+            // this.show = !this.show
         }
     },
 }
 </script>
+
+<template>
+    <Layout>
+        <template #title>
+            Acerca de Mí
+        </template>
+        <template #content>
+            <div class="row">
+                
+                <div class="col l6 s12">
+                    <div class="row">
+                        <div class="col s12">
+                            <p class="flow-text text-justify paragraph">
+                                Ingeniero en Informática, con más de 5 años de experiencia en el área, especializado en el desarrollo de sistemas informáticos.
+                                <br>
+                                Soy una persona responsable, organizado, proactivo, comunicativo, creativo, investigativo, con disposición a aprender nuevos conocimientos, experiencia laboral y asumir retos de cualquier tipo.
+                                <br>&nbsp;
+                            </p>
+                        </div>
+                        
+                        <div class="col s12 small-show">
+                            <div class="center">
+                                <img class="profile responsive-img border-green" v-bind:class="{'rotation' : show , 'hidden': !show}" src="../../assets/img/foto.jpeg"  @load="loading()">
+                            </div>
+                        </div>
+
+                        <div class="col s12">
+                            <h5>Educación:</h5>
+                            <p class="flow-text text-justify paragraph">
+                                <b>
+                                    Instituto Universitario de Tecnología del Oeste “Mariscal Sucre” (IUTOMS)
+                                </b> 
+                                <br>
+                                <b>
+                                    Título Obtenido:&nbsp;
+                                </b>
+                                    Ing. en Informática, 2018
+                                <br>
+                                Caracas, Distrito Capital, Venezuela.
+                            </p>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            
+                <div class="col m6 s12 big-show">
+                    <div class="center">
+                        <img class="profile responsive-img border-green" v-bind:class="{'rotation' : show , 'hidden': !show}" src="../../assets/img/foto.jpeg"  @load="loading()">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col s12">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col m6 s12">
+                    <h5>Idiomas:</h5>  
+                    <p class="flow-text paragraph">
+                        <ul>
+                            <li>Español - Nativo</li>
+                            <li>
+                                Ingles - A2
+                            </li>
+                            <li>
+                                Portugués - A1
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h5>Conocimientos</h5>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col m6 s12">
+                    <Conocimientos title="Lenguajes de Programación" :data="langs"/>
+                </div>
+                <div class="col m6 s12">
+                    <Conocimientos title="Herramientas de Diseño Web" :data="langWebD" width='120px'/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col m6 s12">
+                    <Conocimientos title="Frameworks" :data="frameworks"/>
+                </div>
+                <div class="col m6 s12">
+                    <Conocimientos title="Entornos de Ejecucion" :data="entornoEjecucion"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col m6 s12">
+                    <Conocimientos title="Sistemas Operativos" :data="sO"/>
+                </div>
+                <div class="col m6 s12">
+                    <Conocimientos title="Servidores" :data="servidores"/>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col m6 s12">
+                    <Conocimientos title="Librerías" subtitle="Geolocalización" :data="libGeo"/>
+                </div>
+                <div class="col m6 s12">
+                </div>
+            </div>
+        </template>
+    </Layout>
+</template>
+
+
+<!-- <style src="./aboutMe.css"></style> -->
+<style scoped>
+.small-show {
+    display: none;
+}
+.paragraph {
+    font-size: 20px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.profile {
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    border:10px solid var(--color-custom-green);
+    transition: .5s;
+}
+
+.profile:hover {
+    transition: .5s;
+    box-shadow: 0 0 20px var(--color-custom-purple);
+}
+
+.rotation {
+    animation-duration: 1s;
+    animation-name: rotation;
+    animation-direction:normal;
+}
+
+.hidden {
+    transition: 1s;
+    opacity: 0;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .small-show {
+      display: block !important;
+    }
+    .big-show {
+      display: none !important;
+
+    }
+    .profile{
+        width: 270px;
+        height: 270px;
+    }
+  /* // md */
+}
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+  /* // lg */
+}
+@media only screen and (min-width: 1200px) and (max-width:1400px) {
+  /* // xl */
+}
+@media only screen and (min-width: 1400px) {
+  /* // xxl */
+}
+
+</style>

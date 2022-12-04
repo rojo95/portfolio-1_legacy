@@ -16,6 +16,5 @@ export default {
     },
     mounted() {
       M.AutoInit(); 
-      // console.log(this.data);
     },
   }

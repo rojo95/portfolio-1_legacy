@@ -12,7 +12,6 @@ const router = createRouter({
     {
       path: '/projects',
       name: 'projects',
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/simple_portfolio/index.vue'),
       // component: () => import('../views/Portfolio/index.vue'),
     },
@@ -21,11 +20,11 @@ const router = createRouter({
       name: 'experience',
       component: Experience
     },
-    // {
-    //   path: '/project-details',
-    //   name: 'project-details',
-    //   component: () => import('../views/portfolioDetails/index.vue')
-    // },
+    {
+      path: '/project-details/:id',
+      name: 'project-details',
+      component: () => import('../views/portfolioDetails/index.vue')
+    },
     { path: '/:catchAll(.*)',
      component: () => import ('../views/AboutMe/index.vue'), },
   ]

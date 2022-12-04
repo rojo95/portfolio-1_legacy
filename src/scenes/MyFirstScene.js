@@ -1,60 +1,110 @@
 import { Engine, Scene, FreeCamera, Vector3, MeshBuilder, StandardMaterial, Color3, HemisphericLight } from "@babylonjs/core";
+// para importar objetos
 import 'babylonjs-loaders'
+import {CharacterController} from "babylonjs-charactercontroller";
 
 
 // import * as GUI from 'babylonjs-gui';
 
 const createScene = async (canvas, fpsCallback) => {
-    const engine = new Engine(canvas);
+    const engine = new BABYLON.Engine(canvas);
     const scene = new Scene(engine);
+
+
+    // definir gravedad
+    scene.gravity = new BABYLON.Vector3(0, -0.15, 0);
+    const assumedFramesPerSecond = 60;
+    const earthGravity = -9.81;
+    scene.gravity = new BABYLON.Vector3(0, earthGravity / assumedFramesPerSecond, 0);
+
+    
+
 
     // cielo
     var skybox = BABYLON.MeshBuilder.CreateBox("skyBox", { size: 1000.0 }, scene);
     var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
     skyboxMaterial.backFaceCulling = false;
-    skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("src/assets/img/skybox", scene);
+    skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("src/scenes/textures/skybox", scene);
     skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
     skyboxMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
     skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
     skybox.material = skyboxMaterial;
+    
 
     
-    // camara
-    const camera = new FreeCamera("camera", new Vector3(0, 2, -10), scene);
-    camera.setTarget(Vector3.Zero());
-    camera.attachControl(canvas, true);
-
-    // new HemisphericLight("light", Vector3.Up(), scene);
-
-    // const map = MeshBuilder.CreatePlane('terreno', {size: 100});
-    const materialSuelo = new StandardMaterial('suelo',scene);
-    materialSuelo.diffuseColor = Color3.FromHexString('#000000');
-    // materialSuelo.diffuseColor = Color3.FromHexString('#282828');
-    // map.rotation.x = 1.56;
-
-
     // luz
     var light = new BABYLON.HemisphericLight("HemiLight", new BABYLON.Vector3(0, 1, 0), scene);
+    
+    
+
+
+
+    // camara
+    const camera = new BABYLON.FlyCamera("camera", new BABYLON.Vector3(0, 2, -10), scene);
+    camera.rollCorrect = 10;
+    camera.bankedTurn = true;
+    camera.bankedTurnLimit = Math.PI / 2;
+    camera.bankedTurnMultiplier = 1;
+
+    // aplicar gravedad
+    camera.applyGravity = true;
+
+    // definir colicion de camara
+    camera.ellipsoid = new BABYLON.Vector3(1, 1, 1);
+
+    // habilitar colosiones
+    scene.collisionsEnabled = true;
+    camera.checkCollisions = true;
 
     
+    camera.upperBetaLimit = 157;
+    camera.attachControl(canvas, true);
+
+
+
+    
+    // target camera
+    // camera.lockedTarget = player;
+    
+    
+    
+    // activar controles
+    // let characterController = new CharacterController(camera, camera, scene);
+    // characterController.start();
+    
+    
+    
+    
+    
+    
+    // const map = MeshBuilder.CreatePlane('terreno', {size: 100});
+    // const materialSuelo = new StandardMaterial('suelo',scene);
+    // materialSuelo.diffuseColor = Color3.FromHexString('#000000');
+    // materialSuelo.diffuseColor = Color3.FromHexString('#282828');
+    // map.rotation.x = 1.56;
+    
+    
+    
+    
     // import obj
-    const map = BABYLON.SceneLoader.ImportMesh(null, "src/assets/objs/map/", "map.obj", scene, function (container) { 
+    const terreno = BABYLON.SceneLoader.ImportMesh(null, "src/assets/objs/map/", "map.obj", scene, function (container) { 
         // do something with the scene
         var materials = container.materials;
-
     });
-
-    map.materials = materialSuelo;
+    
+    terreno.checkCollisions = true;
+    
+    // terreno.materials = materialSuelo;
      
      
-     const boxPurple = MeshBuilder.CreateBox("box-green", { size: .25 }, scene);
+     const boxPurple = MeshBuilder.CreateBox("box-green", { size: .1 }, scene);
      const materialPurple = new StandardMaterial("box-grey-material", scene);
      materialPurple.diffuseColor = Color3.FromHexString('#a72ab5');
      boxPurple.material = materialPurple;
      // boxPurple.position.x = 2;
      boxPurple.position.y = 2.5;
      
-     const boxGreen = MeshBuilder.CreateBox("box-green", { size: .25 }, scene);
+     const boxGreen = MeshBuilder.CreateBox("box-green", { size: .1 }, scene);
      const materialGreen = new StandardMaterial("box-green-material", scene);
      materialGreen.diffuseColor = Color3.FromHexString('#4caf50');
      boxGreen.material = materialGreen;
@@ -71,38 +121,40 @@ const createScene = async (canvas, fpsCallback) => {
 
         boxPurple.rotation.y += -0.02;
         boxPurple.rotation.x += -0.02;
-        
+
         if (fpsCallback) {
             fpsCallback(engine.getFps().toFixed());
         }
     });
 
 
-    // const startFrame = 0;
-    // const endFrame = 13;
-    // const frameRate = 13;
-    
-    // const ySlide = new BABYLON.Animation("ySlide", "position.y", frameRate, BABYLON.Animation.ANIMATIONTYPE_FLOAT, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-    
-    // const keyFrames = []; 
-    
-    // keyFrames.push({
-    //         frame: startFrame,
-    //         value: 2
-    //     });
-        
-    // keyFrames.push({
-    //         frame: endFrame,
-    //         value: -2
-    //     });
-            
-            
-    // ySlide.setKeys(keyFrames);
-    
-    // boxGreen.animations.push(ySlide);
+    // animacion de cubitos
+    // const frameRate = 10;
 
-    // //backwards animation
-    // scene.beginAnimation(boxGreen, endFrame, startFrame, false);
+    // const xSlide = new BABYLON.Animation("xSlide", "position.x", frameRate, BABYLON.Animation.ANIMATIONTYPE_FLOAT, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+    // const keyFrames = [];
+
+    // keyFrames.push({
+    //     frame: 0,
+    //     value: .3,
+    // });
+
+    // keyFrames.push({
+    //     frame: frameRate,
+    //     value: -.3,
+    // });
+
+    // keyFrames.push({
+    //     frame: 2 * frameRate,
+    //     value: .3,
+    // });
+
+    // xSlide.setKeys(keyFrames);
+
+    // boxGreen.animations.push(xSlide);
+
+    // scene.beginAnimation(boxGreen, 0, 2 * frameRate, true);
+
     
 };
 

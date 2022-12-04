@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@babylonjs/core": "^5.33.1",
+    "axios": "^1.2.0",
     "babylonjs-charactercontroller": "^0.4.4-alpha.2",
     "babylonjs-gui": "^5.33.1",
     "babylonjs-loaders": "^5.33.2",

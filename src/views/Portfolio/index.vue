@@ -1,7 +1,3 @@
-<template>
-  <canvas ref="bjsCanvas" style="width: 100%" />
-</template>
-
 <script>
 import { ref, onMounted } from "@vue/runtime-core";
 import {CharacterController} from "babylonjs-charactercontroller";
@@ -25,3 +21,7 @@ export default {
   },
 };
 </script>
+
+<template>
+  <canvas ref="bjsCanvas" style="width: 100%" />
+</template>
