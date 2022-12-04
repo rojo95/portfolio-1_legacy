@@ -1,6 +1,7 @@
 <script setup>
 import Item from './details.vue';
-import axios from 'axios';
+import axios from 'redaxios';
+// import axios from 'axios';
 </script>
 <script>
 export default {
@@ -40,11 +41,12 @@ export default {
                 state: false
             },
         ],
-        pages: null
+        pages: null,
+        // url: new URL("/src/assets/information/projects.json", import.meta.url).href,
       }
     },
     mounted() {
-        axios.get("./src/assets/information/projects.json")
+        axios.get(new URL("../../assets/information/projects.json", import.meta.url).href)
         .then((result) => {
             this.pages = result.data.data;
         })
