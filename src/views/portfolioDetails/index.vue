@@ -14,12 +14,11 @@ export default {
     },
     mounted() {
         this.getProj(this.hardDecrypt(this.id));
-        this.image = new URL(`../../assets/img/knowledge/`+project.thumb, import.meta.url).href;
     },
     methods: {
         hardDecrypt(str) {
             let info = atob(atob(str))
-
+            
             let characters = [
                 ['a', 'yiOYZErZcq'],
                 ['b', 'SUicyqdNif'],
@@ -122,6 +121,7 @@ export default {
             return await axios.get(new URL("../../assets/information/projects.json", import.meta.url).href)
             .then((result) => {
                 this.project = result.data.data[id-1];
+                this.image = new URL(`../../assets/img/knowledge/`+result.data.data[id-1].thumb, import.meta.url).href;
                 console.log(this.image);
             })
         }
