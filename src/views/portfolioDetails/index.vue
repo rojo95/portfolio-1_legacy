@@ -117,7 +117,7 @@ export default {
             return finalString;
         },
         async getProj(id) {
-            return await axios.get("/src/information/projects.json")
+            return await axios.get("/src/assets/information/projects.json")
             .then((result) => {
                 this.project = result.data.data[id-1];
             })

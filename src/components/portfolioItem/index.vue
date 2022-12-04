@@ -44,7 +44,7 @@ export default {
       }
     },
     mounted() {
-        axios.get("/src/information/projects.json")
+        axios.get("/src/assets/information/projects.json")
         .then((result) => {
             this.pages = result.data.data;
         })
