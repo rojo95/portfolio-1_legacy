@@ -8,6 +8,7 @@
             "thumb" : "barberia-El-Imperial_thumb.png",
             "info"  : "Página web de tipo One Page, desarrollado para barbería \"El imperial\", dando a conocer servicios y ubicación.",
             "demo"  : "https://rojo95.github.io/barberia-el-imperial-static/",
+            "repo"  : "https://github.com/rojo95/barberia-el-imperial-static/",
             "tech"  : [
                 {
                     "name"  : "WordPress",
@@ -33,6 +34,7 @@
             "thumb" : "dhyana_thumb.png",
             "info"  : "Página web de tipo Landing Page de academia de yoga \"Dhyana\" destinada a ofrecer servicios, captar subscriptores y muevos clientes.",
             "demo"  : "https://rojo95.github.io/dhyana/",
+            "repo"  : "https://github.com/rojo95/dhyana/",
             "tech"  : [
                 {
                     "name"  : "WordPress",
@@ -59,6 +61,7 @@
             "thumb"       : "ovnisolution_thumb.png",
             "info"        : "Página web desarrollada para OVNISOLUTIONS para exponer sus servicios, y captar clientes dando a conocer proyectos y alcance.",
             "demo"        : "https://rojo95.github.io/ovnisolutions-web/",
+            "repo"        : "https://github.com/rojo95/ovnisolutions-web/",
             "tech"        : [
                 {
                     "name"  : "Algular",
@@ -75,6 +78,7 @@
             "thumb"       : "ionic_thumb.png",
             "info"        : "Aplicación telefónica desarrollada en Ionic con la capacidad de posicionar geográficamente al usuario, marcar ubicaciones y generar rutas para llegar al objetivo.",
             "demo"        : "https://rojo95.github.io/ionic-app/",
+            "repo"        : "https://github.com/rojo95/ionic-app/",
             "tech"        : [
                 {
                     "name"  : "Ionic"

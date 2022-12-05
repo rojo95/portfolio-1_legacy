@@ -9,7 +9,7 @@ export default {
             id: this.$route.params.id,
             project: null,
             showImg: true,
-            image: null
+            image: ''
         }
     },
     mounted() {
@@ -121,8 +121,7 @@ export default {
             return await axios.get(new URL("../../assets/information/projects.json", import.meta.url).href)
             .then((result) => {
                 this.project = result.data.data[id-1];
-                this.image = new URL(`../../assets/img/knowledge/`+result.data.data[id-1].thumb, import.meta.url).href;
-                console.log(this.image);
+                this.image = new URL(`/src/assets/img/projects/${result.data.data[id-1].thumb}`, import.meta.url);
             })
         }
     }
@@ -140,8 +139,15 @@ export default {
                 <div class="col m6 s12">
                     <img :src="image" v-show="showImg" style="width:100%">
                 </div>
-                <div class="col m6 s12 center">
-                    <a :href="project.demo" target="_blank" class="btn btn-large purple">DEMO</a>
+                <div class="offset-m6 col m6 s12 center">
+                    <div class="row">
+                        <div v-if="project.demo" class="col s12 center" :class="project.repo ? 'm6' : ''">
+                            <a :href="project.demo" target="_blank" class="btn btn-large purple">DEMO</a>
+                        </div>
+                        <div v-if="project.repo" class="col s12 center" :class="project.demo && 'm6'">
+                            <a :href="project.repo" target="_blank" class="btn btn-large purple">repositorio</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </template>

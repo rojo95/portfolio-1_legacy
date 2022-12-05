@@ -5,8 +5,12 @@ export default {
     },
     data() {
         return {
-            show: false
+            show: false,
+            image: '',
         }
+    },
+    mounted() {
+        this.image = new URL(`/src/assets/img/projects/${this.data.thumb}`, import.meta.url);
     },
     methods: {
         loaded() {
@@ -136,8 +140,7 @@ export default {
                     </div>
                 </div>
                 
-                <img :src="'./src/assets/img/projects/'+data.thumb" @load="loaded()" v-show="show">
-                <!-- <img :src="new URL('../..assets/img/projects/'+data.thumb,import.meta.url).href" @load="loaded()" v-show="show"> -->
+                <img :src="image" @load="loaded()" v-show="show">
                 <span class="card-title" :class="!show ? 'black' : data.color_title ? data.color_title : 'white black-text'">{{data.title}}</span>
                 <RouterLink class="btn-floating halfway-fab waves-effect waves-light purple btn-large" :to="'/project-details/'+encrypt(data.id)">
                     <i class="material-icons">add</i>
