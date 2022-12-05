@@ -1,0 +1,111 @@
+{
+    "status" : 200,
+    "data"   : {
+        "langs": [
+            {
+                "img"   : "../../assets/img/knowledge/php.png",
+                "name"  : "PHP",
+                "link"  : "https://www.php.net/manual/es/intro-whatis.php"
+            },
+            {
+                "img"   : "../../assets/img/knowledge/javascript.png",
+                "name"  : "JavaScript",
+                "link"  : "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
+            },
+            {
+                "img"   : "../../assets/img/knowledge/typescript.png",
+                "name"  : "TypeScript",
+                "link"  : "https://es.wikipedia.org/wiki/TypeScript"
+            }
+        ],
+        "langWebD": [
+            {
+                "img"   : "../../assets/img/knowledge/css3.png",
+                "name"  : "CSS 3",
+                "link"  : "https://es.wikipedia.org/wiki/CSS"
+            },
+            {
+                "img"   : "../../assets/img/knowledge/html5.png",
+                "name"  : "HTML 5",
+                "link"  : "https://es.wikipedia.org/wiki/HTML"
+            }
+        ],
+        "frameworks": [
+            {
+                "img"   : "../../assets/img/knowledge/laravel.png",
+                "name"  : "Laravel",
+                "link"  : ""
+            },
+            {
+                "img"   : "../../assets/img/knowledge/angular.png",
+                "name"  : "Angular",
+                "link"  : ""
+            },
+            {
+                "img"   : "../../assets/img/knowledge/vue.png",
+                "name"  : "Vue JS",
+                "link"  : ""
+            },
+            {
+                "img"   : "../../assets/img/knowledge/react.png",
+                "name"  : "React JS / React Native",
+                "link"  : ""
+            },
+            {
+                "img"   : "../../assets/img/knowledge/ionic.png",
+                "name"  : "Ionic",
+                "link"  : ""
+            },
+            {
+                "img"   : "../../assets/img/knowledge/expressjs.png",
+                "name"  : "Express.JS",
+                "link"  : ""
+            },
+            {
+                "img"   : "../../assets/img/knowledge/bootstrap.png",
+                "name"  : "Bootstrap",
+                "link"  : ""
+            }
+        ],
+        "entornoEjecucion": [
+            {
+                "img"   : "../../assets/img/knowledge/node.png",
+                "name"  : "Node JS",
+                "link"  : ""
+            }
+        ],
+        "sO": [
+            {
+                "img"   : "../../assets/img/knowledge/windows.png",
+                "name"  : "Windows",
+                "link"  : ""
+            },
+            {
+                "img"   : "../../assets/img/knowledge/ubuntu.png",
+                "name"  : "Ubuntu",
+                "link"  : ""
+            },
+            {
+                "img"   : "../../assets/img/knowledge/linux_mint.png",
+                "name"  : "Linux Mint",
+                "link"  : ""
+            }
+        ],
+        "servidores": [
+            {
+                "img"   : "../../assets/img/knowledge/apache.png",
+                "name"  : "Apache HTTP Server",
+                "link"  : ""
+            }
+        ],
+        "libGeo": [
+            {
+                "img"   : "../../assets/img/knowledge/leaflet.png",
+                "name"  : "Leaflet",
+                "lang"  : "JavaScript",
+                "link"  : "https://leafletjs.com",
+                "desc"  : "Leaflet es la principal biblioteca JavaScript de código abierto para mapas interactivos compatibles con dispositivos móviles. Con un peso aproximado de 42 KB de JS, tiene todas las características de mapeo que la mayoría de los desarrolladores necesitan. Leaflet está diseñado teniendo en cuenta la simplicidad, el rendimiento y la facilidad de uso. Funciona de manera eficiente en todas las principales plataformas móviles y de escritorio, se puede ampliar con muchos complementos, tiene una API hermosa, fácil de usar y bien documentada y un código fuente simple y legible al que es un placer contribuir."
+            }
+        ]
+    } 
+}

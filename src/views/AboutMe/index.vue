@@ -253,9 +253,6 @@ export default {
 .small-show {
     display: none;
 }
-.paragraph {
-    font-size: 20px;
-}
 
 .text-justify {
     text-align: justify;
@@ -306,14 +303,4 @@ export default {
     }
   /* // md */
 }
-@media only screen and (min-width: 992px) and (max-width:1200px) {
-  /* // lg */
-}
-@media only screen and (min-width: 1200px) and (max-width:1400px) {
-  /* // xl */
-}
-@media only screen and (min-width: 1400px) {
-  /* // xxl */
-}
-
 </style>

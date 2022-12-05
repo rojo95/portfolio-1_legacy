@@ -11,9 +11,12 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  // configuración de ruta base del proyecto
   // base: './', //configuracion para dar ruta base en caso de git page /<repositorio>/
   base: '/portfolio/', //configuracion para dar ruta base en caso de git page /<repositorio>/
-  build: { // configuracion para ejecutar en git pages
+  build: { 
+    // definición de la carpeta de compilado
+    // configuracion para ejecutar en git pages
     outDir: 'docs'
   },
 })

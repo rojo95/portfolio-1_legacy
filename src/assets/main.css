@@ -1,10 +1,17 @@
 @import "./base.css";
 
- /* custom start */
+/* custom start */
 .bg-dark {
   background-color: var(--color-custom-dark);
 }
 
+.paragraph {
+  font-size: 20px !important;
+}
+
+.text-justify {
+  text-align: justify;
+}
  /* custom end */
 
 /* #app {

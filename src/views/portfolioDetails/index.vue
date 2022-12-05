@@ -1,5 +1,9 @@
 <script setup>
 import Layout from "../../layouts/index.vue";
+import Description from "../../components/PortfolioDetails/description.vue";
+import TypePage from "../../components/PortfolioDetails/TypePage.vue";
+import Demo from "../../components/PortfolioDetails/Demo.vue";
+import UsedTech from "../../components/PortfolioDetails/UsedTech.vue";
 import axios from 'redaxios';
 </script>
 <script>
@@ -120,6 +124,7 @@ export default {
         async getProj(id) {
             return await axios.get(new URL("../../assets/information/projects.json", import.meta.url).href)
             .then((result) => {
+                console.log(result.data.data[id-1]);
                 this.project = result.data.data[id-1];
                 this.image = new URL(`/src/assets/img/projects/${result.data.data[id-1].thumb}`, import.meta.url);
             })
@@ -133,21 +138,27 @@ export default {
         <template #title>{{project.title}}</template>
         <template #content>
             <div class="row">
-                <div class="col m6 s12">
-                    {{project.info}}
-                </div>
-                <div class="col m6 s12">
-                    <img :src="image" v-show="showImg" style="width:100%">
-                </div>
-                <div class="offset-m6 col m6 s12 center">
+                <div class="col l6 s12">
+
+                    <Description :info="project.info" :image="image"/>
+
                     <div class="row">
-                        <div v-if="project.demo" class="col s12 center" :class="project.repo ? 'm6' : ''">
-                            <a :href="project.demo" target="_blank" class="btn btn-large purple">DEMO</a>
-                        </div>
-                        <div v-if="project.repo" class="col s12 center" :class="project.demo && 'm6'">
-                            <a :href="project.repo" target="_blank" class="btn btn-large purple">repositorio</a>
+                        <div class="col s12">
+                            <TypePage :type="project.type"/>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <UsedTech :techs="project.tech"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l6 s12">
+                    
+                    <Demo :image="image" :demo="project.demo" :repo="project.repo"/>
+
                 </div>
             </div>
         </template>
