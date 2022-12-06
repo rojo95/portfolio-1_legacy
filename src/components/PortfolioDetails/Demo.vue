@@ -38,11 +38,11 @@ export default {
                     <div v-if="repo" class="col s12 center" :class="demo && 'm6'">
                         <a :href="repo" target="_blank" class="btn btn-large purple">repositorio</a>
                     </div>
-                    <div class="col s12 center">
+                    <!-- <div class="col s12 center">
                         <GalleryModal :gallery="gallery" v-if="gallery">
                             <a href="#" class="btn btn-large light-blue darken-4">Galería</a>
                         </GalleryModal>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>          
