@@ -1,5 +1,9 @@
 @import "./base.css";
 
+html, body {
+  background-color: var(--color-custom-dark);
+}
+
 /* custom start */
 .bg-dark {
   background-color: var(--color-custom-dark);

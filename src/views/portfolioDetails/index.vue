@@ -157,7 +157,7 @@ export default {
 
                 <div class="col l6 s12">
                     
-                    <Demo :image="image" :demo="project.demo" :repo="project.repo"/>
+                    <Demo :image="image" :demo="project.demo" :repo="project.repo" :gallery="project.gallery"/>
 
                 </div>
             </div>

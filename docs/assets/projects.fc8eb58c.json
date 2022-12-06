@@ -30,6 +30,16 @@
                     "image" : "loftloader.png",
                     "docs"  : "https://es.wordpress.org/plugins/loftloader/"
                 }
+            ],
+            "gallery" : [
+                {
+                    "img"  : "barberia-El-Imperial.png",
+                    "desc" : "Página web completa."
+                },
+                {
+                    "img"  : "barberia-el-imperial_loading.png",
+                    "desc" : "Ventana de carga de la página web."
+                }
             ]
         },
         {
@@ -149,6 +159,53 @@
                     "image" : "leaflet-logo.jpg",
                     "desc"  : "Leaflet es una librería JavaScript open source ampliamente utilizada para la publicación de mapas en la web."
                 }
+            ]
+        },
+        {
+            "id"    : 5,
+            "title" : "Pulperi-App",
+            "type"  : [
+                "Sistema de gestión de Información"
+            ],
+            "thumb" : "pulperi-app_thumb.png",
+            "info"  : "Sistema de información de gestión y control de ventas, personal e inventario para pequeños o medianos establecimiento de venta.",
+            "tech"  : [
+                {
+                    "name"  : "PHP",
+                    "image" : "php_2.png",
+                    "desc"  : "PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML."
+                },
+                {
+                    "name"  : "JavaScript",
+                    "image" : "javascript.png",
+                    "desc"  : "JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web."
+                },
+                {
+                    "name"  : "Laravel 9",
+                    "image" : "laravel.png",
+                    "desc"  : "Laravel es un framework PHP gratis y de código abierto que brinda un conjunto de herramientas y recursos para crear aplicaciones modernas. Posee un ecosistema integral que combina funciones integradas y una variedad de paquetes y extensiones compatibles."
+                },
+                {
+                    "name"  : "jQuery",
+                    "image" : "jquery.png",
+                    "desc"  : "jQuery es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web."
+                },
+                {
+                    "name"  : "ChartJs",
+                    "image" : "chartjs.png",
+                    "desc"  : "Gráficos de JavaScript basados ​​en HTML5 simples, limpios y atractivos. Chart.js es una manera fácil de incluir gráficos animados e interactivos en su sitio web de forma gratuita."
+                }
+            ],
+            "gallery" : [
+                "pulperi-app.png",
+                "pulperi-app.png",
+                "pulperi-app.png",
+                "pulperi-app.png",
+                "pulperi-app.png",
+                "pulperi-app.png",
+                "pulperi-app.png",
+                "pulperi-app.png",
+                "pulperi-app.png"
             ]
         }
     ]

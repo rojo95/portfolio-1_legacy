@@ -121,7 +121,7 @@ export default {
 }
 </script>
 <template>
-    <div class="col s12 m4">
+    <div class="col s12 m6 l4">
         <div class="card">
             <div class="card-image center-align s12">
                 <div class="loader" v-show="!show">
