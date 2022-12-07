@@ -28,7 +28,7 @@ export default {
             <slot name="heading"></slot>
           </h3>
         </div>
-        <div class="collapsible-body white">
+        <div class="collapsible-body white black-text">
           <slot></slot>
         </div>
       </li>
