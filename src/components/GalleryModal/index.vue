@@ -25,7 +25,7 @@ export default {
             <h4>Galería del Proyecto</h4>
             <div class="row">
                 <div class="col" v-for="(item, i) in gallery" :key="i">
-                    <ImageItemVue :src="`/src/assets/img/projects/${item.img}`" :desc="item.desc"/>                    
+                    <ImageItemVue :src="item.img" :desc="item.desc"/>                    
                 </div>
             </div>
             </div>
@@ -36,3 +36,9 @@ export default {
           
     </div>
 </template>
+
+<style scoped>
+    div.col {
+        padding: 10px;
+    }
+</style>

@@ -6,7 +6,7 @@ export default {
     },
     data() {
         return {
-            image: new URL(this.src, import.meta.url)
+            image: new URL(`/src/assets/img/projects/${this.src}`, import.meta.url)
         }
     },
     mounted() {
@@ -16,9 +16,16 @@ export default {
 </script>
 <template>
     <div>
-        <img class="materialboxed" :src="src" height="150" :data-caption="desc">
+        <img class="materialboxed thumb_gallery" :src="image" :data-caption="desc  ? desc : ''">
     </div>
 </template>
 
-<style scoped>
+<style>
+img.thumb_gallery:not(.active) {
+    max-width: 150px;
+    max-height: 250px;
+}
+div.materialbox-caption {
+    z-index: 10000 !important;
+}
 </style>

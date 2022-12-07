@@ -32,17 +32,17 @@ export default {
         <div class="row">
             <div class="col s12 center">
                 <div class="row btn-group">
-                    <div v-if="demo" class="col s12 center" :class="repo ? 'm6' : ''">
+                    <div v-if="demo" class="col s12 center" :class="( !repo && !gallery ) ? '' : ( !repo || !gallery || gallery.length <= 0 ) ? 'm6' : 'm4'">
                         <a :href="demo" target="_blank" class="btn btn-large green">DEMO</a>
                     </div>
-                    <div v-if="repo" class="col s12 center" :class="demo && 'm6'">
-                        <a :href="repo" target="_blank" class="btn btn-large purple">repositorio</a>
+                    <div v-if="repo" class="col s12 center" :class="( !demo && !gallery ) ? '' : ( !demo || !gallery || gallery.length <= 0 ) ? 'm6' : 'm4'">
+                        <a :href="repo" target="_blank" class="btn btn-large purple">REPOSITORIO</a>
                     </div>
-                    <!-- <div class="col s12 center">
-                        <GalleryModal :gallery="gallery" v-if="gallery">
-                            <a href="#" class="btn btn-large light-blue darken-4">Galería</a>
+                    <div class="col s12 center"  v-if="(gallery && gallery.length > 0)" :class="(!demo && !repo) ? '' : (!demo || !repo) ? 'm6' : 'm4'">
+                        <GalleryModal :gallery="gallery">
+                            <button class="btn btn-large light-blue darken-4">GALERÍA</button>
                         </GalleryModal>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>          

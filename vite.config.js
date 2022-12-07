@@ -12,8 +12,8 @@ export default defineConfig({
     }
   },
   // configuración de ruta base del proyecto
-  // base: './', //configuracion para dar ruta base en caso de git page /<repositorio>/
-  base: '/portfolio/', //configuracion para dar ruta base en caso de git page /<repositorio>/
+  base: './', //configuracion para dar ruta base en caso de git page /<repositorio>/
+  // base: '/portfolio/', //configuracion para dar ruta base en caso de git page /<repositorio>/
   build: { 
     // definición de la carpeta de compilado
     // configuracion para ejecutar en git pages

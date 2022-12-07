@@ -37,8 +37,28 @@
                     "desc" : "Página web completa."
                 },
                 {
-                    "img"  : "barberia-el-imperial_loading.png",
+                    "img"  : "barberia-el-imperial_1.png",
                     "desc" : "Ventana de carga de la página web."
+                },
+                {
+                    "img"  : "barberia-el-imperial_2.png",
+                    "desc" : "Sección de slider de la página web."
+                },
+                {
+                    "img"  : "barberia-el-imperial_3.png",
+                    "desc" : "Sección de equipo de la página web."
+                },
+                {
+                    "img"  : "barberia-el-imperial_4.png",
+                    "desc" : "Sección de servicios de la página web."
+                },
+                {
+                    "img"  : "barberia-el-imperial_5.png",
+                    "desc" : "Sección de premios y dirección de la página web."
+                },
+                {
+                    "img"  : "barberia-el-imperial_6.png",
+                    "desc" : "Sección de opiniones y pie de página de la página web."
                 }
             ]
         },
@@ -80,6 +100,28 @@
                     "desc"  : "Plugin para realizar ventana básica de precarga de página web",
                     "image" : "loftloader.png",
                     "docs"  : "https://es.wordpress.org/plugins/loftloader/"
+                }
+            ],
+            "gallery" : [
+                {
+                    "img"  : "dhyana.png",
+                    "desc" : "Ventana de Inicio de la página web."
+                },
+                {
+                    "img"  : "dhyana_2.png",
+                    "desc" : "Ventana de \"Nosotros\" de la página web donde explica más a profundidad de qué trata la empresa."
+                },
+                {
+                    "img"  : "dhyana_3.png",
+                    "desc" : "Ventana de \"Programas\" de la página web, donde detallan sus programas y cursos."
+                },
+                {
+                    "img"  : "dhyana_4.png",
+                    "desc" : "Ventana de \"Eventos\" de la página web, donde se muestra los eventos que sucederán así como un historico de eventos."
+                },
+                {
+                    "img"  : "dhyana_5.png",
+                    "desc" : "Ventana de \"Academia\" de la página web, donde se da información de la misma y se especifica cómo llegar."
                 }
             ]
         },
@@ -125,6 +167,24 @@
                     "name"  : "ng-bootstrap",
                     "desc"  : "Framework de diseño web Bootstrap adaptado a Angular."
                 }
+            ],
+            "gallery" : [
+                {
+                    "img" : "ovnisolutions.png",
+                    "desc": "Visualización completa de la página web de \"OVNISOLUTIONS\", la cual esta pensada para dar a conocer una pequeña empresa y ofrecer y presentar los servicios."
+                },
+                {
+                    "img" : "ovnisolutions_2.png",
+                    "desc": "Secciones del menú, slider y equipo que conforma \"OVNISOLUTIONS\"."
+                },
+                {
+                    "img" : "ovnisolutions_3.png",
+                    "desc": "Servicios y algunas demostraciones de los servicios que ofrece \"OVNISOLUTIONS\"."
+                },
+                {
+                    "img" : "ovnisolutions_4.png",
+                    "desc": "Sección de \"Contáctanos\" y pié de página de la página web."
+                }
             ]
         },
         {
@@ -159,6 +219,9 @@
                     "image" : "leaflet-logo.jpg",
                     "desc"  : "Leaflet es una librería JavaScript open source ampliamente utilizada para la publicación de mapas en la web."
                 }
+            ],
+            "gallery" : [
+                
             ]
         },
         {
@@ -195,17 +258,6 @@
                     "image" : "chartjs.png",
                     "desc"  : "Gráficos de JavaScript basados ​​en HTML5 simples, limpios y atractivos. Chart.js es una manera fácil de incluir gráficos animados e interactivos en su sitio web de forma gratuita."
                 }
-            ],
-            "gallery" : [
-                "pulperi-app.png",
-                "pulperi-app.png",
-                "pulperi-app.png",
-                "pulperi-app.png",
-                "pulperi-app.png",
-                "pulperi-app.png",
-                "pulperi-app.png",
-                "pulperi-app.png",
-                "pulperi-app.png"
             ]
         }
     ]
