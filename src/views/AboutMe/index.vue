@@ -142,7 +142,7 @@ export default {
                             <p class="flow-text text-justify paragraph">
                                 Ingeniero en Informática, con más de 5 años de experiencia en el área, especializado en el desarrollo de sistemas informáticos.
                                 <br>
-                                Soy una persona responsable, organizado, proactivo, comunicativo, creativo, investigativo, con disposición a aprender nuevos conocimientos, experiencia laboral y asumir retos de cualquier tipo.
+                                Soy una persona responsable, organizado, proactivo, comunicativo, creativo, investigativo, con disposición a adquirir nuevos conocimientos, experiencia laboral y asumir retos de cualquier tipo.
                                 <br>&nbsp;
                             </p>
                         </div>
@@ -193,7 +193,7 @@ export default {
                         <ul>
                             <li>Español - Nativo</li>
                             <li>
-                                Ingles - A2
+                                Ingles - B1
                             </li>
                             <li>
                                 Portugués - A1

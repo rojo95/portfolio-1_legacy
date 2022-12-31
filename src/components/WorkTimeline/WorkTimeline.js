@@ -82,8 +82,8 @@ export default {
           {
             name: 'Comisión Nacional de las Tecnologías de la Información',
             abrName: 'CONATI',
-            inicio: '02 Jul 2018',
-            fin: '30 Nov 2018',
+            inicio: '01 Abr 2018',
+            fin: '29 Jun 2018',
             cargo: 'Analista Integral Senior de Sistemas Informáticos',
             funciones: [
               'Programador Web Full Stack',
