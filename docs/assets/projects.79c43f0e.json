@@ -165,6 +165,7 @@
                 },
                 {
                     "name"  : "ng-bootstrap",
+                    "image" : "ng-bootstrap.png",
                     "desc"  : "Framework de diseño web Bootstrap adaptado a Angular."
                 }
             ],
@@ -216,7 +217,7 @@
                 },
                 {
                     "name"  : "Leaflet",
-                    "image" : "leaflet-logo.jpg",
+                    "image" : "leaflet-logo.png",
                     "desc"  : "Leaflet es una librería JavaScript open source ampliamente utilizada para la publicación de mapas en la web."
                 }
             ],
@@ -257,6 +258,46 @@
                     "name"  : "ChartJs",
                     "image" : "chartjs.png",
                     "desc"  : "Gráficos de JavaScript basados ​​en HTML5 simples, limpios y atractivos. Chart.js es una manera fácil de incluir gráficos animados e interactivos en su sitio web de forma gratuita."
+                }
+            ]
+        },
+        {
+            "id"    : 6,
+            "title" : "Carnetización con React",
+            "type"  : [
+                "Sistema de gestión de Información"
+            ],
+            "color_title" : "black",
+            "thumb" : "react-carnets_thumb.png",
+            "info"  : "Herramienta para la creación de carnets totalmente editables y customizables, el cual permite arrastrar y redimensionar fácilmente los diferentes elementos del carné, lo que hace que la personalización sea más intuitiva y cómoda.",
+            "demo"        : "https://rojo95.github.io/carnet-react/",
+            "repo"        : "https://github.com/rojo95/carnet-react/",
+            "galeria": [],
+            "tech"  : [
+                {
+                    "name"  : "React JS",
+                    "image" : "react.png",
+                    "desc"  : "React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página."
+                },
+                {
+                    "name"  : "JavaScript",
+                    "image" : "javascript.png",
+                    "desc"  : "JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web."
+                },
+                {
+                    "name"  : "react-rnd",
+                    "image" : "react-rnd.png",
+                    "desc"  : "React RND es una librearía de JavaScript creada para React JS, la cual permite arrastrar y redimensionar elementos en tiempo real dentro del DOM."
+                },
+                {
+                    "name"  : "react-qr-code",
+                    "image" : "",
+                    "desc"  : "Librería de JavaScript creada para React JS para hacer códigos QR de manera sencilla."
+                },
+                {
+                    "name"  : "react-watermark",
+                    "image" : "",
+                    "desc"  : "Librería de JavaScript creada para React JS para colocar marca de agua en un area especificada."
                 }
             ]
         }

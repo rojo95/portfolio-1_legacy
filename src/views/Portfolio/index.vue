@@ -1,5 +1,5 @@
 <script>
-import { ref, onMounted } from "@vue/runtime-core";
+import { ref, onMounted } from "vue";
 import {CharacterController} from "babylonjs-charactercontroller";
 
 import { createScene } from "../../scenes/MyFirstScene";
