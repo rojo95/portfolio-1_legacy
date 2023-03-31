@@ -8,7 +8,8 @@
 export default {
   data() {
     return {
-      show : false
+      show : false,
+      pdf: new URL(`../../assets/pdf/ES - Curriculum Vitae Johan 23-03-2023`, import.meta.url).href
     }
   },
   mounted() {
@@ -26,15 +27,15 @@ export default {
         <i class="material-icons">add</i>
     </button> -->
 
-    <div class="fixed-action-btn">
+    <!--<div class="fixed-action-btn">
       <a class="btn-floating btn-large purple" title="Más">
         <i class="large material-icons">add</i>
       </a>
       <ul>
         <li><a class="btn-floating green"><i class="material-icons">visibility</i></a></li>
-        <li><a class="btn-floating blue"><i class="material-icons">file_download</i></a></li>
+        <li><a class="btn-floating blue" :href="pdf" target="_blank"><i class="material-icons">file_download</i></a></li>
       </ul>
-    </div>
+    </div>-->
     
     <div>
       <div class="row" v-show="!show">
