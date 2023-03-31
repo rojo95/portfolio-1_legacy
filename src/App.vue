@@ -22,6 +22,20 @@ export default {
     
     <NavBar />
 
+    <!-- <button class="btn-floating halfway-fab waves-effect waves-light purple btn-large position-btn-more" >
+        <i class="material-icons">add</i>
+    </button> -->
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large purple" title="Más">
+        <i class="large material-icons">add</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating green"><i class="material-icons">visibility</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">file_download</i></a></li>
+      </ul>
+    </div>
+    
     <div>
       <div class="row" v-show="!show">
         <div class="col valign-wrapper s12 content">
@@ -57,5 +71,11 @@ export default {
 
 .content {
   height: 600px;
+}
+
+.position-btn-more {
+  position: fixed !important;
+  bottom: 30px !important;
+  /* top: 0px; */
 }
 </style>

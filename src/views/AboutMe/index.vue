@@ -1,12 +1,15 @@
 <script setup>
 import Conocimientos from "../../components/KnowledgeItems/index.vue";
 import Layout from "../../layouts/index.vue";
+import axios from 'redaxios';
+import html2pdf from "html2pdf.js";
 </script>
 <script>
 export default {
     data() {
         return {
             show: false,
+            experienceY: 0,
             langs: [
                 {
                     img: new URL(`../../assets/img/knowledge/php.png`, import.meta.url).href,
@@ -19,10 +22,15 @@ export default {
                     link: "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
                 },
                 {
+                    img: new URL(`../../assets/img/knowledge/yaml-logo.png`, import.meta.url).href,
+                    name: 'Yaml',
+                    link: ""
+                },
+                {
                     img: new URL(`../../assets/img/knowledge/typescript.png`, import.meta.url).href,
                     name: 'TypeScript',
                     link: "https://es.wikipedia.org/wiki/TypeScript"
-                }
+                },
             ],
             langWebD: [
                 {
@@ -35,6 +43,36 @@ export default {
                     name: 'HTML 5',
                     link: 'https://es.wikipedia.org/wiki/HTML'
                 },
+                {
+                    img: new URL(`../../assets/img/knowledge/scss.png`, import.meta.url).href,
+                    name: 'SCSS',
+                    link: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/twig-logo.png`, import.meta.url).href,
+                    name: 'Twig',
+                    link: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/material-ui-logo.png`, import.meta.url).href,
+                    name: 'Material UI',
+                    link: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/vuetify-logo-v3.png`, import.meta.url).href,
+                    name: 'Vuetify 3',
+                    link: '',
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/bootstrap.png`, import.meta.url).href,
+                    name: 'Bootstrap',
+                    link: '',
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/tailwind-css-logo.png`, import.meta.url).href,
+                    name: 'Tailwind Css',
+                    link: '',
+                }
             ],
             frameworks: [
                 {
@@ -68,10 +106,10 @@ export default {
                     link: '',
                 },
                 {
-                    img: new URL(`../../assets/img/knowledge/bootstrap.png`, import.meta.url).href,
-                    name: 'Bootstrap',
+                    img: new URL(`../../assets/img/knowledge/symfony-logo.png`, import.meta.url).href,
+                    name: 'Symfony 6',
                     link: '',
-                },
+                }
             ],
             entornoEjecucion: [
                 {
@@ -96,6 +134,11 @@ export default {
                     name: 'Linux Mint',
                     link: ''
                 },
+                {
+                    img: new URL(`../../assets/img/knowledge/Debian_logo.png`, import.meta.url).href,
+                    name: 'Debian',
+                    link: ''
+                },
             ],
             servidores: [
                 {
@@ -104,26 +147,134 @@ export default {
                     link: ''
                 }
             ],
-            libGeo: [
+            virtualizacion: [
                 {
+                    img: new URL(`../../assets/img/knowledge/docker-logo.png`, import.meta.url).href,
+                    name: 'Docker',
+                    link: ''
+                }
+            ],
+            libs: [
+            {
                     img: new URL(`../../assets/img/knowledge/leaflet.png`, import.meta.url).href,
                     name: 'Leaflet',
                     lang: 'JavaScript',
                     link: 'https://leafletjs.com',
                     desc: 'Leaflet es la principal biblioteca JavaScript de código abierto para mapas interactivos compatibles con dispositivos móviles. Con un peso aproximado de 42 KB de JS, tiene todas las características de mapeo que la mayoría de los desarrolladores necesitan. Leaflet está diseñado teniendo en cuenta la simplicidad, el rendimiento y la facilidad de uso. Funciona de manera eficiente en todas las principales plataformas móviles y de escritorio, se puede ampliar con muchos complementos, tiene una API hermosa, fácil de usar y bien documentada y un código fuente simple y legible al que es un placer contribuir.'
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/ng-bootstrap.png`, import.meta.url).href,
+                    name: 'ng-bootstrap',
+                    lang: 'JavaScript',
+                    link: 'https://leafletjs.com',
+                    desc: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/react-rnd.png`, import.meta.url).href,
+                    name: 'react-rnd',
+                    lang: 'JavaScript',
+                    link: 'https://leafletjs.com',
+                    desc: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/jquery.png`, import.meta.url).href,
+                    name: 'jQuery',
+                    lang: 'JavaScript',
+                    link: 'https://leafletjs.com',
+                    desc: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/chartjs.png`, import.meta.url).href,
+                    name: 'Chart.js',
+                    lang: 'JavaScript',
+                    link: 'https://www.chartjs.org/',
+                    desc: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/aframe-logo.png`, import.meta.url).href,
+                    name: 'A-Frame',
+                    lang: 'JavaScript',
+                    link: 'https://leafletjs.com',
+                    desc: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/three-js-logo.png`, import.meta.url).href,
+                    name: 'Three JS',
+                    lang: 'JavaScript',
+                    link: 'https://leafletjs.com',
+                    desc: ''
+                }
+            ],
+            cms: [
+                {
+                    img: new URL(`../../assets/img/knowledge/wordpress.png`, import.meta.url).href,
+                    name: 'WordPress',
+                    link: 'https://wordpress.com',
+                    desc: ''
+                }
+            ],
+            db: [
+            {
+                    img: new URL(`../../assets/img/knowledge/postgresql.png`, import.meta.url).href,
+                    name: 'PostgreSQL',
+                    link: '',
+                    desc: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/mysql.png`, import.meta.url).href,
+                    name: 'MySQL',
+                    link: '',
+                    desc: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/sqlite.png`, import.meta.url).href,
+                    name: 'SQLite',
+                    link: '',
+                    desc: ''
+                },{
+                    img: new URL(`../../assets/img/knowledge/sqlserver.png`, import.meta.url).href,
+                    name: 'Mycrosoft SQL Server',
+                    link: '',
+                    desc: ''
+                },
+            ],
+            version: [
+                {
+                    img: new URL(`../../assets/img/knowledge/github.png`, import.meta.url).href,
+                    name: "GitHub",
+                    link: '',
+                    desc: ''
                 }
             ]
         }
     },
     mounted() {
         M.AutoInit(); 
-        console.log(this.images)
+        this.experienceYears()
     },
     methods: {
         loading(){
             this.show = true
             // this.show = !this.show
+        },
+        async experienceYears() {
+            return await axios.get(new URL("../../assets/information/works.json", import.meta.url).href)
+            .then((result) => {
+                let today = new Date;
+                let firstJob = result.data.data.reverse()[0].inicio;
+                firstJob = new Date(firstJob)
+                this.experienceY = today.getFullYear() - firstJob.getFullYear();
+            })
+        },
+        exportPDF() {
+            const d = new Date();
+            html2pdf(document.getElementById("element-to-convert"), {
+				margin: 3,
+  			    filename: `Johan Román CV ${d.getHours()}_ ${d.getDay()==5 ? '0' : d.getDay()+1}-${d.getMonth()+1}-${d.getFullYear()}.pdf`,
+                outputImg: "img"
+			});
         }
+
     },
 }
 </script>
@@ -134,15 +285,15 @@ export default {
             Acerca de Mí
         </template>
         <template #content>
-            <div class="row">
+            <div class="row" id="element-to-convert">
                 
                 <div class="col l6 s12">
                     <div class="row">
                         <div class="col s12">
                             <p class="flow-text text-justify paragraph">
-                                Ingeniero en Informática, con más de 5 años de experiencia en el área, especializado en el desarrollo de sistemas informáticos.
+                                ¡Hola! Soy un Ingeniero en Informática con más de {{ experienceY }} años de experiencia en el área y me especializo en el desarrollo de sistemas informáticos.
                                 <br>
-                                Soy una persona responsable, organizado, proactivo, comunicativo, creativo, investigativo, con disposición a adquirir nuevos conocimientos, experiencia laboral y asumir retos de cualquier tipo.
+                                Me considero una persona responsable, organizada, proactiva, comunicativa, creativa e investigativa, siempre dispuesta a aprender nuevos conocimientos y a asumir retos de cualquier tipo. Me apasiona la tecnología y la innovación, y siempre busco estar al día con las últimas tendencias en el campo de la informática. Mi experiencia laboral ha sido en distintos proyectos que me han permitido desarrollar habilidades en diversas áreas del desarrollo de software, desde el análisis y diseño hasta la implementación y mantenimiento. Estoy seguro de que mi perfil profesional puede ser un gran aporte para cualquier proyecto en el que se requiera un enfoque tecnológico y creativo.
                                 <br>&nbsp;
                             </p>
                         </div>
@@ -188,15 +339,15 @@ export default {
 
             <div class="row">
                 <div class="col m6 s12">
-                    <h5>Idiomas:</h5>  
+                    <h5>Habilidades lingüísticas:</h5>  
                     <p class="flow-text paragraph">
                         <ul>
-                            <li>Español - Nativo</li>
+                            <li>Español: Nativo</li>
                             <li>
-                                Ingles - B1
+                                Ingles: nivel B2 (Intermedio)
                             </li>
                             <li>
-                                Portugués - A1
+                                Portugués: nivel A2 (Elemental)
                             </li>
                         </ul>
                     </p>
@@ -205,7 +356,7 @@ export default {
 
             <div class="row">
                 <div class="col">
-                    <h5>Conocimientos</h5>
+                    <h5><strong>Habilidades en Tecnología de la Información.</strong></h5>
                 </div>
             </div>
             
@@ -229,20 +380,40 @@ export default {
 
             <div class="row">
                 <div class="col m6 s12">
+                    <Conocimientos title="Bases de Datos" :data="db"/>
+                </div>
+                <div class="col m6 s12">
+                    <Conocimientos title="CMS" :data="cms"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col m6 s12">
                     <Conocimientos title="Sistemas Operativos" :data="sO"/>
                 </div>
                 <div class="col m6 s12">
-                    <Conocimientos title="Servidores" :data="servidores"/>
+                    <Conocimientos title="Virtualizadores" :data="virtualizacion"/>
                 </div>
             </div>
             
             <div class="row">
                 <div class="col m6 s12">
-                    <Conocimientos title="Librerías" subtitle="Geolocalización" :data="libGeo"/>
+                    <Conocimientos title="Servidores" :data="servidores"/>
+                </div>
+                <div class="col m6 s12">
+                    <Conocimientos title="Librerías" :data="libs"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col m6 s12">
+                    <Conocimientos title="Control de Versiones" :data="version"/>
                 </div>
                 <div class="col m6 s12">
                 </div>
             </div>
+
+            <!--button @click="exportPDF">dale con todo</button-->
         </template>
     </Layout>
 </template>

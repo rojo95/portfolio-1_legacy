@@ -54,16 +54,6 @@ export default {
 </script>
 <template>
     <div>
-        <!-- <div class="row">
-            <div class="col s12 white radius">
-                <div class="input-field col s12">
-                    <select multiple>
-                        <option class="white-text" :value="tech.name" v-for="(tech, i) in techs" :key="i">{{tech.name}}</option>
-                    </select>
-                    <label>Filtro</label>
-                </div>
-            </div>
-        </div> -->
         <div class="row">
             <Item v-for="(item, i) in pages" :key="i" :data="item" />
         </div>

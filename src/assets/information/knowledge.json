@@ -65,6 +65,11 @@
                 "img"   : "../../assets/img/knowledge/bootstrap.png",
                 "name"  : "Bootstrap",
                 "link"  : ""
+            },
+            {
+                "img"   : "../../assets/img/knowledge/bootstrap.png",
+                "name"  : "Vuetify",
+                "link"  : ""
             }
         ],
         "entornoEjecucion": [

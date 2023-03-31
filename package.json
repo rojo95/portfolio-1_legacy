@@ -15,6 +15,7 @@
     "babylonjs-charactercontroller": "^0.4.4-alpha.2",
     "babylonjs-gui": "^5.33.1",
     "babylonjs-loaders": "^5.33.2",
+    "html2pdf.js": "^0.10.1",
     "material-design-icons": "^3.0.1",
     "materialize-css": "^1.0.0-rc.2",
     "pinia": "^2.0.21",
