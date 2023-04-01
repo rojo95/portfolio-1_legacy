@@ -9,12 +9,29 @@ export default {
   data() {
     return {
       show : false,
-      pdf: new URL(`../../assets/pdf/ES - Curriculum Vitae Johan 23-03-2023`, import.meta.url).href
     }
   },
   mounted() {
     this.show = !this.show;
-  }
+  },
+  methods: {
+    download () {
+      const file = "ES-Curriculum_Vitae_Johan_23-03-2023.pdf"
+      const pdf = new URL(`./assets/pdf/${file}`, import.meta.url).href
+      fetch(`${pdf}`)
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', file);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      })
+      .catch(error => console.error(error));
+    }
+  },
 }
 </script>
 
@@ -27,15 +44,16 @@ export default {
         <i class="material-icons">add</i>
     </button> -->
 
-    <!--<div class="fixed-action-btn">
+    <div class="fixed-action-btn" @click="download()">
       <a class="btn-floating btn-large purple" title="Más">
-        <i class="large material-icons">add</i>
+        <i class="large material-icons">file_download</i>
+        <!--i class="large material-icons">add</i-->
       </a>
-      <ul>
+      <!--ul>
         <li><a class="btn-floating green"><i class="material-icons">visibility</i></a></li>
-        <li><a class="btn-floating blue" :href="pdf" target="_blank"><i class="material-icons">file_download</i></a></li>
-      </ul>
-    </div>-->
+        <li><a class="btn-floating blue" @click="download()"><i class="material-icons">file_download</i></a></li>
+      </ul-->
+    </div>
     
     <div>
       <div class="row" v-show="!show">
