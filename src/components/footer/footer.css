@@ -1,4 +1,32 @@
 .router-link-active {
-    font-weight: bold;
-    text-shadow: 0 0 15px var(--color-custom-purple);
+  font-weight: bold;
+  text-shadow: 0 0 15px var(--color-custom-purple);
+}
+
+.heart {
+  width: 15px;
+  animation: palpito 1.5s linear infinite;
+}
+
+@keyframes palpito {
+  0% {
+    font-size: 15px;
+    left: 0px;
+  }
+  25% {
+    font-size: 12px;
+    left: 1px;
+  }
+  50% {
+    font-size: 18px;
+    left: -1px;
+  }
+  75% {
+    font-size: 11px;
+    left: 1px;
+  }
+  100% {
+    font-size: 15px;
+    left: 0px;
+  }
 }

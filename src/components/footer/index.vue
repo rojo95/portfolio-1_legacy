@@ -26,7 +26,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-            © {{d}} Copyright - Hecho con <i class="material-icons tiny purple-text">favorite</i> por Johan Román
+            © {{d}} Copyright - Hecho con <i class="material-icons tiny purple-text heart">favorite</i> por Johan Román
             <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
             </div>
         </div>

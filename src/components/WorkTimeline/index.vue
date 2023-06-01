@@ -33,10 +33,10 @@
         <i class="material-icons icon">business</i>
       </template>
       <template #heading>
-        <k>
+        <strong>
           {{item.cargo}}
-        </k>
-        &nbsp;- {{item.abrName}} <br> ({{item.inicio}} - {{item.fin}})
+        </strong>
+        &nbsp;- {{item.abrName}} <br> ({{item.inicio}} - {{item.fin || "Actualidad"}})
       </template>
   
       <div>
@@ -62,9 +62,16 @@
               <li v-for="list in item.frameworks" v-bind:key="list">- {{list}}</li>
             </ul>
           </div>
+          <div class="col m6" v-if="item.cms?.length>0">
+            <b>CMS Empleados:</b>
+            <ul>
+              <li v-for="list in item.cms" v-bind:key="list">- {{list}}</li>
+            </ul>
+          </div>
         </div>
       </div>
-      {{item.descripcion}}
+      <hr v-if="item.descripcion">
+      {{item.descripcion || ""}}
     </ItemTimeline>
   </div>
 </template>
