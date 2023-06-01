@@ -47,7 +47,7 @@ export default {
     mounted() {
         axios.get(new URL("../../assets/information/projects.json", import.meta.url).href)
         .then((result) => {
-            this.pages = result.data.data;
+            this.pages = result.data.data.reverse();
         })
     }
   }
