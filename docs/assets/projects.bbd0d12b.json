@@ -291,7 +291,8 @@
       "title": "React Map",
       "type": ["One Page"],
       "thumb": "react-map_thumb.png",
-      "info": "Página web de tipo One Page, orientada al posicionamiento global.",
+      "color_title": "black",
+      "info": "Página web de tipo One Page, orientada al posicionamiento global, la misma posee propiedades como cambiar el tipo de mapa, localizar la posición actual y trazar rutas desde el punto A al punto B.",
       "demo": "https://rojo95.github.io/react-map/",
       "repo": "https://github.com/rojo95/react-map/",
       "tech": [
