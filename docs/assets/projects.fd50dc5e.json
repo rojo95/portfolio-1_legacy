@@ -1,0 +1,343 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "id": 1,
+      "title": "Barbería El Imperial",
+      "type": ["One Page"],
+      "thumb": "barberia-El-Imperial_thumb.png",
+      "info": "Página web de tipo One Page, desarrollado para barbería \"El imperial\", dando a conocer servicios y ubicación.",
+      "demo": "https://rojo95.github.io/barberia-el-imperial-static/",
+      "repo": "https://github.com/rojo95/barberia-el-imperial-static/",
+      "tech": [
+        {
+          "name": "WordPress",
+          "desc": "WordPress es un sistema de gestión de contenidos lanzado el 27 de mayo de 2003, enfocado a la creación de cualquier tipo de página web.",
+          "image": "wordpress.png",
+          "docs": "https://wordpress.com/es/"
+        },
+        {
+          "name": "Elementor",
+          "desc": "El plugin creador de sitios web de Elementor permite a los usuarios de WordPress crear y editar sitios web empleando la técnica de arrastrar y soltar, con un modo de respuesta integrado.",
+          "image": "elementor-logo.png",
+          "docs": "https://elementor.com"
+        },
+        {
+          "name": "LoftLoader",
+          "desc": "Plugin para realizar ventana básica de precarga de página web",
+          "image": "loftloader.png",
+          "docs": "https://es.wordpress.org/plugins/loftloader/"
+        }
+      ],
+      "gallery": [
+        {
+          "img": "barberia-El-Imperial.png",
+          "desc": "Página web completa."
+        },
+        {
+          "img": "barberia-el-imperial_1.png",
+          "desc": "Ventana de carga de la página web."
+        },
+        {
+          "img": "barberia-el-imperial_2.png",
+          "desc": "Sección de slider de la página web."
+        },
+        {
+          "img": "barberia-el-imperial_3.png",
+          "desc": "Sección de equipo de la página web."
+        },
+        {
+          "img": "barberia-el-imperial_4.png",
+          "desc": "Sección de servicios de la página web."
+        },
+        {
+          "img": "barberia-el-imperial_5.png",
+          "desc": "Sección de premios y dirección de la página web."
+        },
+        {
+          "img": "barberia-el-imperial_6.png",
+          "desc": "Sección de opiniones y pie de página de la página web."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Dyhana",
+      "type": ["Landing Page"],
+      "thumb": "dhyana_thumb.png",
+      "info": "Página web de tipo Landing Page de academia de yoga \"Dhyana\" destinada a ofrecer servicios, captar subscriptores y muevos clientes.",
+      "demo": "https://rojo95.github.io/dhyana/",
+      "repo": "https://github.com/rojo95/dhyana/",
+      "tech": [
+        {
+          "name": "WordPress",
+          "desc": "WordPress es un sistema de gestión de contenidos lanzado el 27 de mayo de 2003, enfocado a la creación de cualquier tipo de página web.",
+          "image": "wordpress.png",
+          "docs": "https://wordpress.com/es/"
+        },
+        {
+          "name": "Elementor",
+          "desc": "El plugin creador de sitios web de Elementor permite a los usuarios de WordPress crear y editar sitios web empleando la técnica de arrastrar y soltar, con un modo de respuesta integrado.",
+          "image": "elementor-logo.png",
+          "docs": "https://elementor.com"
+        },
+        {
+          "name": "Event Calendar",
+          "desc": "Cree y administre fácilmente un calendario de eventos en su sitio de WordPress con el complemento gratuito The Events Calendar. Ya sea que sus eventos sean presenciales o virtuales, este complemento de calendario de WordPress cuenta con funciones profesionales respaldadas por nuestro equipo de desarrolladores y diseñadores de clase mundial.",
+          "image": "event-calendar-wordpress.png"
+        },
+        {
+          "name": "Events Widgets For Elementor And The Events Calendar",
+          "desc": "Con este widget, puede mostrar eventos fácilmente en la página de inicio o en cualquier otra página de Elementor. Proporciona tres tipos de Diseños (Lista/Lista mínima/Calendario).",
+          "image": "calendar-elementor.png"
+        },
+        {
+          "name": "LoftLoader",
+          "desc": "Plugin para realizar ventana básica de precarga de página web",
+          "image": "loftloader.png",
+          "docs": "https://es.wordpress.org/plugins/loftloader/"
+        }
+      ],
+      "gallery": [
+        {
+          "img": "dhyana.png",
+          "desc": "Ventana de Inicio de la página web."
+        },
+        {
+          "img": "dhyana_2.png",
+          "desc": "Ventana de \"Nosotros\" de la página web donde explica más a profundidad de qué trata la empresa."
+        },
+        {
+          "img": "dhyana_3.png",
+          "desc": "Ventana de \"Programas\" de la página web, donde detallan sus programas y cursos."
+        },
+        {
+          "img": "dhyana_4.png",
+          "desc": "Ventana de \"Eventos\" de la página web, donde se muestra los eventos que sucederán así como un historico de eventos."
+        },
+        {
+          "img": "dhyana_5.png",
+          "desc": "Ventana de \"Academia\" de la página web, donde se da información de la misma y se especifica cómo llegar."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "OVNISOLUTIONS",
+      "type": ["One Page", "Landing Page"],
+      "color_title": "black",
+      "thumb": "ovnisolution_thumb.png",
+      "info": "Página web desarrollada para OVNISOLUTIONS para exponer sus servicios, y captar clientes dando a conocer proyectos y alcance.",
+      "demo": "https://rojo95.github.io/ovnisolutions-web/",
+      "repo": "https://github.com/rojo95/ovnisolutions-web/",
+      "tech": [
+        {
+          "name": "TypeScript",
+          "desc": "TypeScript es un lenguaje de programación fuertemente tipado que se basa en JavaScript, lo que le brinda mejores herramientas a cualquier escala.",
+          "image": "typescript.png"
+        },
+        {
+          "name": "HTML",
+          "image": "html5.png",
+          "desc": "HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas."
+        },
+        {
+          "name": "SCSS",
+          "image": "scss.png",
+          "desc": "Sass es un lenguaje de hojas de estilo compilado en CSS. Le permite usar variables, reglas anidadas, mixins, funciones y más, todo con una sintaxis totalmente compatible con CSS. Sass ayuda a mantener bien organizadas las hojas de estilo grandes y facilita compartir el diseño dentro y entre proyectos."
+        },
+        {
+          "name": "Algular",
+          "desc": "Angular es un framework para aplicaciones web desarrollado en TypeScript.",
+          "image": "angular.png",
+          "docs": "https://angular.io"
+        },
+        {
+          "name": "ngx-parallax-scroll",
+          "desc": "Este es un complemento angular simple, que nos permite implementar el efecto de paralaje para algún elemento en la página."
+        },
+        {
+          "name": "ng-bootstrap",
+          "image": "ng-bootstrap.png",
+          "desc": "Framework de diseño web Bootstrap adaptado a Angular."
+        }
+      ],
+      "gallery": [
+        {
+          "img": "ovnisolutions.png",
+          "desc": "Visualización completa de la página web de \"OVNISOLUTIONS\", la cual esta pensada para dar a conocer una pequeña empresa y ofrecer y presentar los servicios."
+        },
+        {
+          "img": "ovnisolutions_2.png",
+          "desc": "Secciones del menú, slider y equipo que conforma \"OVNISOLUTIONS\"."
+        },
+        {
+          "img": "ovnisolutions_3.png",
+          "desc": "Servicios y algunas demostraciones de los servicios que ofrece \"OVNISOLUTIONS\"."
+        },
+        {
+          "img": "ovnisolutions_4.png",
+          "desc": "Sección de \"Contáctanos\" y pié de página de la página web."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "App Geolocalización",
+      "color_title": "black",
+      "type": ["App"],
+      "thumb": "ionic_thumb.png",
+      "info": "Aplicación telefónica desarrollada en Ionic con la capacidad de posicionar geográficamente al usuario, marcar ubicaciones y generar rutas para llegar al objetivo.",
+      "demo": "https://rojo95.github.io/ionic-app/",
+      "repo": "https://github.com/rojo95/ionic-app/",
+      "tech": [
+        {
+          "name": "Ionic",
+          "image": "ionic.png",
+          "desc": "Ionic es un framework gratuito y open source para desarrollar aplicaciones híbridas multiplataforma que utiliza HTML5, CSS (generado por SASS) y Cordova como base."
+        },
+        {
+          "name": "Algular",
+          "desc": "Angular es un framework para aplicaciones web desarrollado en TypeScript.",
+          "image": "angular.png",
+          "docs": "https://angular.io"
+        },
+        {
+          "name": "Apache Cordova",
+          "desc": "Es un popular entorno de desarrollo de aplicaciones móviles, permite a los programadores de software, construir aplicaciones para dispositivos móviles utilizando CSS3, HTML5, y JavaScript en vez de utilizar APIs específicas de cada plataforma como Android, iOS, o Windows Phone."
+        },
+        {
+          "name": "Leaflet",
+          "image": "leaflet-logo.png",
+          "desc": "Leaflet es una librería JavaScript open source ampliamente utilizada para la publicación de mapas en la web."
+        }
+      ],
+      "gallery": []
+    },
+    {
+      "id": 5,
+      "title": "Pulperi-App",
+      "type": ["Sistema de gestión de Información"],
+      "thumb": "pulperi-app_thumb.png",
+      "info": "Sistema de información de gestión y control de ventas, personal e inventario para pequeños o medianos establecimiento de venta.",
+      "tech": [
+        {
+          "name": "PHP",
+          "image": "php_2.png",
+          "desc": "PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML."
+        },
+        {
+          "name": "JavaScript",
+          "image": "javascript.png",
+          "desc": "JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web."
+        },
+        {
+          "name": "Laravel 9",
+          "image": "laravel.png",
+          "desc": "Laravel es un framework PHP gratis y de código abierto que brinda un conjunto de herramientas y recursos para crear aplicaciones modernas. Posee un ecosistema integral que combina funciones integradas y una variedad de paquetes y extensiones compatibles."
+        },
+        {
+          "name": "jQuery",
+          "image": "jquery.png",
+          "desc": "jQuery es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web."
+        },
+        {
+          "name": "ChartJs",
+          "image": "chartjs.png",
+          "desc": "Gráficos de JavaScript basados ​​en HTML5 simples, limpios y atractivos. Chart.js es una manera fácil de incluir gráficos animados e interactivos en su sitio web de forma gratuita."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Carnetización con React",
+      "type": ["Sistema de gestión de Información"],
+      "color_title": "black",
+      "thumb": "react-carnets_thumb.png",
+      "info": "Herramienta para la creación de carnets totalmente editables y customizables, el cual permite arrastrar y redimensionar fácilmente los diferentes elementos del carné, lo que hace que la personalización sea más intuitiva y cómoda.",
+      "demo": "https://rojo95.github.io/carnet-react/",
+      "repo": "https://github.com/rojo95/carnet-react/",
+      "galeria": [],
+      "tech": [
+        {
+          "name": "React JS",
+          "image": "react.png",
+          "desc": "React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página."
+        },
+        {
+          "name": "JavaScript",
+          "image": "javascript.png",
+          "desc": "JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web."
+        },
+        {
+          "name": "react-rnd",
+          "image": "react-rnd.png",
+          "desc": "React RND es una librearía de JavaScript creada para React JS, la cual permite arrastrar y redimensionar elementos en tiempo real dentro del DOM."
+        },
+        {
+          "name": "react-qr-code",
+          "image": "",
+          "desc": "Librería de JavaScript creada para React JS para hacer códigos QR de manera sencilla."
+        },
+        {
+          "name": "react-watermark",
+          "image": "",
+          "desc": "Librería de JavaScript creada para React JS para colocar marca de agua en un area especificada."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "React Map",
+      "type": ["One Page"],
+      "thumb": "react-map_thumb.png",
+      "info": "Página web de tipo One Page, orientada al posicionamiento global.",
+      "demo": "https://rojo95.github.io/react-map/",
+      "repo": "https://github.com/rojo95/react-map/",
+      "tech": [
+        {
+          "name": "React JS",
+          "image": "react.png",
+          "desc": "React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página."
+        },
+        {
+          "name": "Leaflet",
+          "image": "leaflet-logo.png",
+          "desc": "Leaflet es una librería JavaScript open source ampliamente utilizada para la publicación de mapas en la web."
+        },
+        {
+          "name": "react-leaflet",
+          "image": "leaflet-logo.png",
+          "desc": "Leaflet es una librería JavaScript open source ampliamente utilizada para la publicación de mapas en la web."
+        },
+        {
+          "name": "Material Ui",
+          "image": "material-ui-logo.png",
+          "desc": "Material UI es una biblioteca de componentes de interfaz de usuario de React.js, basada en Material Design de Google, que proporciona pautas y lineamientos para crear diseños profesionales para aplicaciones web en poco tiempo."
+        }
+      ],
+      "gallery": [
+        {
+          "img": "react-map_1.png",
+          "desc": "Página web completa."
+        },
+        {
+          "img": "react-map_2.png",
+          "desc": "Menues laterales de la página."
+        },
+        {
+          "img": "react-map_3.png",
+          "desc": "Variación del mapa."
+        },
+        {
+          "img": "react-map_4.png",
+          "desc": "Selección de ruta en el mapa."
+        },
+        {
+          "img": "react-map_5.png",
+          "desc": "Ruta trazada en el mapa."
+        }
+      ]
+    }
+  ]
+}
