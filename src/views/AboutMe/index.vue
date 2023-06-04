@@ -270,7 +270,7 @@ export default {
             const d = new Date();
             html2pdf(document.getElementById("element-to-convert"), {
 				margin: 3,
-  			    filename: `Johan Román CV ${d.getHours()}_ ${d.getDay()==5 ? '0' : d.getDay()+1}-${d.getMonth()+1}-${d.getFullYear()}.pdf`,
+                filename: `Johan Román CV ${d.getHours()}_ ${d.getDay()==5 ? '0' : d.getDay()+1}-${d.getMonth()+1}-${d.getFullYear()}.pdf`,
                 outputImg: "img"
 			});
         }
@@ -347,7 +347,7 @@ export default {
                                 Ingles: nivel B2 (Intermedio)
                             </li>
                             <li>
-                                Portugués: nivel A2 (Elemental)
+                                Portugués: nivel B1 (Intermedio)
                             </li>
                         </ul>
                     </p>
