@@ -19,24 +19,24 @@ export default {
                 {
                     img: new URL(`../../assets/img/knowledge/javascript.png`, import.meta.url).href,
                     name: 'JavaScript',
-                    link: "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
+                    link: "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript#una_definici%C3%B3n_de_alto_nivel"
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/yaml-logo.png`, import.meta.url).href,
                     name: 'Yaml',
-                    link: ""
+                    link: "https://es.wikipedia.org/wiki/YAML"
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/typescript.png`, import.meta.url).href,
                     name: 'TypeScript',
-                    link: "https://es.wikipedia.org/wiki/TypeScript"
+                    link: "https://www.typescriptlang.org/"
                 },
             ],
             langWebD: [
                 {
                     img: new URL(`../../assets/img/knowledge/css3.png`, import.meta.url).href,
                     name: 'CSS 3',
-                    link: 'https://es.wikipedia.org/wiki/CSS'
+                    link: 'https://www.w3.org/Style/CSS/'
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/html5.png`, import.meta.url).href,
@@ -46,116 +46,136 @@ export default {
                 {
                     img: new URL(`../../assets/img/knowledge/scss.png`, import.meta.url).href,
                     name: 'SCSS',
-                    link: ''
+                    link: 'https://sass-lang.com/'
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/twig-logo.png`, import.meta.url).href,
                     name: 'Twig',
-                    link: ''
+                    link: 'https://twig.symfony.com/'
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/material-ui-logo.png`, import.meta.url).href,
                     name: 'Material UI',
-                    link: ''
+                    link: 'https://mui.com/material-ui/getting-started/'
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/vuetify-logo-v3.png`, import.meta.url).href,
                     name: 'Vuetify 3',
-                    link: '',
+                    link: 'https://vuetifyjs.com/en/introduction/why-vuetify/#what-is-vuetify3f/',
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/bootstrap.png`, import.meta.url).href,
                     name: 'Bootstrap',
-                    link: '',
+                    link: 'https://getbootstrap.com/',
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/tailwind-css-logo.png`, import.meta.url).href,
                     name: 'Tailwind Css',
-                    link: '',
+                    link: 'https://tailwindcss.com/',
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/styled_components.png`, import.meta.url).href,
+                    name: 'Styled Components',
+                    link: 'https://styled-components.com/'
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/figma.png`, import.meta.url).href,
+                    name: 'Figma',
+                    link: 'https://www.figma.com/'
                 }
             ],
             frameworks: [
                 {
+                    img: new URL(`../../assets/img/knowledge/react.png`, import.meta.url).href,
+                    name: 'React JS / React Native',
+                    link: 'https://legacy.reactjs.org/',
+                },
+                {
                     img: new URL(`../../assets/img/knowledge/laravel.png`, import.meta.url).href,
                     name: 'Laravel',
-                    link: '',
+                    link: 'https://laravel.com/',
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/nuxt.png`, import.meta.url).href,
+                    name: 'Nuxt Js',
+                    link: 'https://nuxt.com/',
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/next.png`, import.meta.url).href,
+                    name: 'Next Js',
+                    link: 'https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs',
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/angular.png`, import.meta.url).href,
                     name: 'Angular',
-                    link: '',
+                    link: 'https://angular.io/guide/what-is-angular',
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/vue.png`, import.meta.url).href,
                     name: 'Vue JS',
-                    link: '',
-                },
-                {
-                    img: new URL(`../../assets/img/knowledge/react.png`, import.meta.url).href,
-                    name: 'React JS / React Native',
-                    link: '',
+                    link: 'https://vuejs.org/guide/introduction.html#what-is-vue',
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/ionic.png`, import.meta.url).href,
                     name: 'Ionic',
-                    link: '',
+                    link: 'https://ionicframework.com/',
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/expressjs.png`, import.meta.url).href,
                     name: 'Express.JS',
-                    link: '',
+                    link: 'https://expressjs.com/',
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/symfony-logo.png`, import.meta.url).href,
                     name: 'Symfony 6',
-                    link: '',
+                    link: 'https://symfony.com/',
                 }
             ],
             entornoEjecucion: [
                 {
                     img: new URL(`../../assets/img/knowledge/node.png`, import.meta.url).href,
                     name: 'Node JS',
-                    link: ''
+                    link: 'https://nodejs.org/es'
                 }
             ],
             sO: [
                 {
                     img: new URL(`../../assets/img/knowledge/windows.png`, import.meta.url).href,
                     name: 'Windows',
-                    link: ''
+                    link: 'https://es.wikipedia.org/wiki/Microsoft_Windows'
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/ubuntu.png`, import.meta.url).href,
                     name: 'Ubuntu',
-                    link: ''
+                    link: 'https://es.wikipedia.org/wiki/Ubuntu'
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/linux_mint.png`, import.meta.url).href,
                     name: 'Linux Mint',
-                    link: ''
+                    link: 'https://es.wikipedia.org/wiki/Linux_Mint'
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/Debian_logo.png`, import.meta.url).href,
                     name: 'Debian',
-                    link: ''
+                    link: 'https://es.wikipedia.org/wiki/Debian_GNU/Linux'
                 },
             ],
             servidores: [
                 {
                     img: new URL(`../../assets/img/knowledge/apache.png`, import.meta.url).href,
                     name: 'Apache HTTP Server',
-                    link: ''
+                    link: 'https://httpd.apache.org/'
                 }
             ],
             virtualizacion: [
                 {
                     img: new URL(`../../assets/img/knowledge/docker-logo.png`, import.meta.url).href,
                     name: 'Docker',
-                    link: ''
+                    link: 'https://docs.docker.com/get-started/overview/'
                 }
             ],
             libs: [
-            {
+                {
                     img: new URL(`../../assets/img/knowledge/leaflet.png`, import.meta.url).href,
                     name: 'Leaflet',
                     lang: 'JavaScript',
@@ -166,21 +186,21 @@ export default {
                     img: new URL(`../../assets/img/knowledge/ng-bootstrap.png`, import.meta.url).href,
                     name: 'ng-bootstrap',
                     lang: 'JavaScript',
-                    link: 'https://leafletjs.com',
+                    link: 'https://ng-bootstrap.github.io/#/home',
                     desc: ''
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/react-rnd.png`, import.meta.url).href,
                     name: 'react-rnd',
                     lang: 'JavaScript',
-                    link: 'https://leafletjs.com',
+                    link: 'https://www.npmjs.com/package/react-rnd',
                     desc: ''
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/jquery.png`, import.meta.url).href,
                     name: 'jQuery',
                     lang: 'JavaScript',
-                    link: 'https://leafletjs.com',
+                    link: 'https://www.npmjs.com/package/react-rnd',
                     desc: ''
                 },
                 {
@@ -194,14 +214,14 @@ export default {
                     img: new URL(`../../assets/img/knowledge/aframe-logo.png`, import.meta.url).href,
                     name: 'A-Frame',
                     lang: 'JavaScript',
-                    link: 'https://leafletjs.com',
+                    link: 'https://aframe.io/docs/1.4.0/introduction/',
                     desc: ''
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/three-js-logo.png`, import.meta.url).href,
                     name: 'Three JS',
                     lang: 'JavaScript',
-                    link: 'https://leafletjs.com',
+                    link: 'https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene',
                     desc: ''
                 }
             ],
@@ -214,27 +234,33 @@ export default {
                 }
             ],
             db: [
-            {
+                {
+                    img: new URL(`../../assets/img/knowledge/mongo.png`, import.meta.url).href,
+                    name: 'Mongo DB',
+                    link: 'https://www.mongodb.com/es/what-is-mongodb',
+                    desc: ''
+                },
+                {
                     img: new URL(`../../assets/img/knowledge/postgresql.png`, import.meta.url).href,
                     name: 'PostgreSQL',
-                    link: '',
+                    link: 'https://www.postgresql.org/',
                     desc: ''
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/mysql.png`, import.meta.url).href,
                     name: 'MySQL',
-                    link: '',
+                    link: 'https://dev.mysql.com/doc/refman/8.0/en/what-is-mysql.html',
                     desc: ''
                 },
                 {
                     img: new URL(`../../assets/img/knowledge/sqlite.png`, import.meta.url).href,
                     name: 'SQLite',
-                    link: '',
+                    link: 'https://www.sqlite.org/index.html',
                     desc: ''
                 },{
                     img: new URL(`../../assets/img/knowledge/sqlserver.png`, import.meta.url).href,
                     name: 'Mycrosoft SQL Server',
-                    link: '',
+                    link: 'https://learn.microsoft.com/en-us/sql/sql-server/what-is-sql-server?view=sql-server-ver16',
                     desc: ''
                 },
             ],
@@ -242,7 +268,13 @@ export default {
                 {
                     img: new URL(`../../assets/img/knowledge/github.png`, import.meta.url).href,
                     name: "GitHub",
-                    link: '',
+                    link: 'https://github.com/',
+                    desc: ''
+                },
+                {
+                    img: new URL(`../../assets/img/knowledge/gitlab.png`, import.meta.url).href,
+                    name: "GitLab",
+                    link: 'https://about.gitlab.com/',
                     desc: ''
                 }
             ]
@@ -347,7 +379,7 @@ export default {
                                 Ingles: nivel B2 (Intermedio)
                             </li>
                             <li>
-                                Portugués: nivel B1 (Intermedio)
+                                Portugués: nivel B1 (Elemental)
                             </li>
                         </ul>
                     </p>
