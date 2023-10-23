@@ -1,5 +1,0 @@
-<<<<<<<< HEAD:docs/assets/html2canvas.f48cce0b.js
-import{r as c}from"./index.52d61648.js";function f(t,n){for(var o=0;o<n.length;o++){const e=n[o];if(typeof e!="string"&&!Array.isArray(e)){for(const r in e)if(r!=="default"&&!(r in t)){const a=Object.getOwnPropertyDescriptor(e,r);a&&Object.defineProperty(t,r,a.get?a:{enumerable:!0,get:()=>e[r]})}}}return Object.freeze(Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}))}var s=c();const l=f({__proto__:null,default:s},[s]);export{l as h};
-========
-import{r as c}from"./index.79393229.js";function f(t,n){for(var o=0;o<n.length;o++){const e=n[o];if(typeof e!="string"&&!Array.isArray(e)){for(const r in e)if(r!=="default"&&!(r in t)){const a=Object.getOwnPropertyDescriptor(e,r);a&&Object.defineProperty(t,r,a.get?a:{enumerable:!0,get:()=>e[r]})}}}return Object.freeze(Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}))}var s=c();const l=f({__proto__:null,default:s},[s]);export{l as h};
->>>>>>>> main:docs/assets/html2canvas.9f12d46f.js
