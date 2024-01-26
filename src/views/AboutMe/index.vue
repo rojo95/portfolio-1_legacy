@@ -329,10 +329,9 @@ export default {
                                 <br>&nbsp;
                             </p>
                         </div>
-                        
                         <div class="col s12 small-show">
                             <div class="center">
-                                <img class="profile responsive-img border-green" v-bind:class="{'rotation' : show , 'hidden': !show}" src="../../assets/img/foto.jpeg"  @load="loading()">
+                                <img class="profile responsive-img border-green" v-bind:class="{'rotation' : show , 'hidden': !show}" src="../../assets/img/foto_2.webp"  @load="loading()">
                             </div>
                         </div>
 
@@ -359,7 +358,7 @@ export default {
             
                 <div class="col m6 s12 big-show">
                     <div class="center">
-                        <img class="profile responsive-img border-green" v-bind:class="{'rotation' : show , 'hidden': !show}" src="../../assets/img/foto.jpeg"  @load="loading()">
+                        <img class="profile responsive-img border-green" v-bind:class="{'rotation' : show , 'hidden': !show}" src="../../assets/img/foto_2.webp"  @load="loading()">
                     </div>
                 </div>
             </div>
@@ -464,14 +463,14 @@ export default {
 .profile {
     width:300px;
     height:300px;
-    border-radius: 50%;
-    border:10px solid var(--color-custom-green);
+    /* border-radius: 50%; */
+    /* border:10px solid var(--color-custom-green); */
     transition: .5s;
 }
 
 .profile:hover {
     transition: .5s;
-    box-shadow: 0 0 20px var(--color-custom-purple);
+    filter: drop-shadow(0 0 2em var(--color-custom-purple));
 }
 
 .rotation {
