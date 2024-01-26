@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     download () {
-      const file = "ES_Curriculum_Vitae_Johan.pdf"
+      const file = "Curriculum-ES.pdf"
       const pdf = new URL(`./assets/pdf/${file}`, import.meta.url).href
       fetch(`${pdf}`)
       .then(response => response.blob())
