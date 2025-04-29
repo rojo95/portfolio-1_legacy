@@ -1,6 +1,7 @@
 @import "./base.css";
 
-html, body {
+html,
+body {
   background-color: var(--color-custom-dark);
 }
 
@@ -16,7 +17,7 @@ html, body {
 .text-justify {
   text-align: justify;
 }
- /* custom end */
+/* custom end */
 
 /* #app {
   max-width: 1280px;
@@ -51,3 +52,7 @@ a,
     padding: 0 2rem;
   }
 } */
+
+.text-title {
+  color: var(--color-custom-dark);
+}
