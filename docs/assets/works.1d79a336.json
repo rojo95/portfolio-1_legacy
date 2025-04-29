@@ -2,10 +2,25 @@
   "status": 200,
   "data": [
     {
+      "name": "Taktics Ingeniería de Negocio S.L.",
+      "abrName": "Taktics",
+      "inicio": "07 May 2024",
+      "fin": null,
+      "cargo": "Desarrollador Full Stack",
+      "funciones": [
+        "Programador Web Full Stack",
+        "Desarrollador Móvil React Native",
+        "Diseñador Web"
+      ],
+      "conocimientos": ["Figma", "CSS", "JavaScript"],
+      "frameworks": ["React Native"],
+      "descripcion": ""
+    },
+    {
       "name": "Grupo AKR",
       "abrName": "Grupo AKR",
       "inicio": "02 May 2023",
-      "fin": null,
+      "fin": "7 May 2024",
       "cargo": "Desarrollador Web Full Stack",
       "funciones": ["Programador Web Full Stack"],
       "conocimientos": [
@@ -13,17 +28,25 @@
         "CSS",
         "JavaScript",
         "NodeJs",
-        "ExpressJS",
         "EcmaScript 6",
-        "MongoDB"
+        "MongoDB",
+        "WordPress",
+        "JQuery"
       ],
-      "frameworks": ["React Js", "Bootstrap 4"],
+      "frameworks": ["React Js", "Bootstrap 4", "ExpressJS"],
       "descripcion": "",
       "proyects": [
         {
+          "name": "Creación e Integración de Pasarela de Pago de Mercantil Venezuela",
+          "rol": "Desarrollador Full Stack",
+          "desc": "Se creó un plugin de Wordpress que conecta con una API de Node JS con Typescript, el cual se conecta con la plataforma de Mercantil Venezuela para pagar automáticamente las ordenes realizadas por el mismo.",
+          "tech": "React Js, Node Js (con TypeScript), Woocommerce.",
+          "goals": "Integrar e Implementar una Pasarela de pago en Woocommerce, procesando el pago con Node Js (Typescitp) e integrando con Mercantil Venezuela."
+        },
+        {
           "name": "Mantenimiento y actualización del Sistema \"KAPI\" de Fullfilment",
-          "rol": "Desarrollador Full Stack", 
-          "desc": "Mantenimiento el sistema 'KAPI', una solución de Fullfilment que facilita la publicación y actualización de productos en Woocommerce y Mercado Libre, la descarga de tarifas, productos, categorías de Odoo, y la recepción de notificaciones desde Shopify a través de webhooks nativos.",
+          "rol": "Desarrollador Full Stack",
+          "desc": "Mantenimiento el sistema \"KAPI\", una solución de Fullfilment que facilita la publicación y actualización de productos en Woocommerce y Mercado Libre, la descarga de tarifas, productos, categorías de Odoo, y la recepción de notificaciones desde Shopify a través de webhooks nativos.",
           "tech": "React Js, Node Js (con TypeScript), Woocommerce, Mercado Libre, Odoo, Shopify, Bootstrap, Styled Components, y gestión de sesiones a través de estados contextuales.",
           "goals": "Mejoré la eficiencia del sistema al implementar nuevas características y optimizar el código existente, lo que resultó en un aumento significativo en la eficiencia operativa de la publicación y actualización de productos."
         }
