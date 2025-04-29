@@ -2,7 +2,6 @@
 import Conocimientos from "../../components/KnowledgeItems/index.vue";
 import Layout from "../../layouts/index.vue";
 import axios from 'redaxios';
-import html2pdf from "html2pdf.js";
 </script>
 <script>
 export default {
@@ -298,15 +297,6 @@ export default {
                 this.experienceY = today.getFullYear() - firstJob.getFullYear();
             })
         },
-        exportPDF() {
-            const d = new Date();
-            html2pdf(document.getElementById("element-to-convert"), {
-				margin: 3,
-                filename: `Johan Román CV ${d.getHours()}_ ${d.getDay()==5 ? '0' : d.getDay()+1}-${d.getMonth()+1}-${d.getFullYear()}.pdf`,
-                outputImg: "img"
-			});
-        }
-
     },
 }
 </script>
@@ -444,7 +434,6 @@ export default {
                 </div>
             </div>
 
-            <!--button @click="exportPDF">dale con todo</button-->
         </template>
     </Layout>
 </template>

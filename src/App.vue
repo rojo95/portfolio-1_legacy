@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterView } from "vue-router";
 import Footer from "./components/footer/index.vue";
 import NavBar from "./components/navBar/index.vue";
 M.AutoInit();
@@ -13,24 +13,6 @@ export default {
   },
   mounted() {
     this.show = !this.show;
-  },
-  methods: {
-    download() {
-      const file = "Curriculum_Johan_Roman-ES.pdf";
-      const pdf = new URL(`./assets/pdf/${file}`, import.meta.url).href;
-      fetch(`${pdf}`)
-        .then((response) => response.blob())
-        .then((blob) => {
-          const url = window.URL.createObjectURL(new Blob([blob]));
-          const link = document.createElement("a");
-          link.href = url;
-          link.setAttribute("download", file);
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        })
-        .catch((error) => console.error(error));
-    },
   },
 };
 </script>
